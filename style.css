@@ -119,7 +119,8 @@ Global Styles
 }
 
 .insert img {
-  width: 90%
+  width: 90%;
+ border-radius: none;
 }
 
 /*ABOUT SECTION STARTS*/

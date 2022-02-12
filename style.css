@@ -110,6 +110,18 @@ Global Styles
 }
 /*BANNER ENDS*/
 
+/**************************************I*N*S*E*R*T**********************************************/
+.insert {
+  width:100%;
+  diplay: flex;
+  justify-content: center;
+  
+}
+
+.insert img {
+  width: 90%
+}
+
 /*ABOUT SECTION STARTS*/
 .about {
   width: 100%;

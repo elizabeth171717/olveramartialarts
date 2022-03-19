@@ -102,13 +102,14 @@ Global Styles
   font-size: 30px;
   color: #000000;
   text-align: center;
+  padding: 10px 0;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
 @media (max-width: 500px) {
 .glow {
   font-size: 20px;
- 
+  padding: 5px 0;
 }
 }
 

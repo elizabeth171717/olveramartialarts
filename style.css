@@ -100,9 +100,16 @@ Global Styles
 
 .glow {
   font-size: 30px;
-  color: #fff;
+  color: #000000;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+@media (max-width: 500px) {
+.glow {
+  font-size: 20px;
+ 
+}
 }
 
 @-webkit-keyframes glow {

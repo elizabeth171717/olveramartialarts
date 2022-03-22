@@ -10,7 +10,7 @@ var images = [];
   images[0] = '1.jpg';
   images[1] = '2.jpg';
   images[2] = '5.jpg';
-  images[3] = '3.jpg';
+  
   
 
   function changeImg() {

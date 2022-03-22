@@ -131,15 +131,19 @@ Global Styles
   font-size: 25px;
 }
 
+.phone p a {
+  color: white;
+}
+
 @media (max-width: 500px) {
   .logo img {
-  width: 40%;
+  width: 50%;
   margin-left: 10px;
 }
   
  .phone p {
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
   }
 

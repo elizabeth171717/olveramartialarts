@@ -132,6 +132,11 @@ Global Styles
 }
 
 @media (max-width: 500px) {
+  .logo img {
+  width: 40%;
+  margin-left: 10px;
+}
+  
  .phone p {
   margin-right: 10px;
   font-size: 12px;

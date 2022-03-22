@@ -50,8 +50,7 @@ a {
 img:not(.logo) {
   width: 100%;
   display: block;
-  border-radius: 5px;
-  border: 1px solid black;
+  
 }
 
 h1,
@@ -116,7 +115,7 @@ Global Styles
 }
 
 .logo img {
-  width: 20%;
+  width: 25%;
   margin-left: 40px;
 }
 

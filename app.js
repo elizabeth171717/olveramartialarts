@@ -8,7 +8,7 @@ var images = [];
 
  //image list
   images[0] = '1.jpg';
-  images[1] = '2.jpg';
+  images[1] = '4.jpg';
   images[2] = '5.jpg';
   
   

@@ -159,7 +159,7 @@ Global Styles
 .slider img{
   object-fit:cover;
  width: 70%;
-  height: auto;
+  height: 350px;
   
 }
 /*HERO SECTION ENDS*/

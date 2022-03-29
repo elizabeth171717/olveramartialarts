@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
@@ -16,17 +24,41 @@
   <body>
     <div class="container">
       <!--hero-->
-     <div class="hero">
-      <div class="header">
-        <div class="logo"><img src="olvera.jpg" /></div>
-        <div class="phone">
-          <p>CALL US: <a href="tel:404-556-1725">404-556-1725 </a></p>
+     <div class="home">
+        <div class="header">
+          <div class="contact">
+            <p class="color">Free Trail</p>
+            <p class="number">
+              Call Us: <a href="tel:404-556-1725">404-207-4627</a>
+            </p>
+          </div>
+          <div class="logo"><img src="logo.jpg" /></div>
+        </div>
+
+        <div class="banner">
+          <div class="sub-title">
+            <h1><span>M</span>artial <span>A</span>rts <span>S</span>chool</h1>
+          </div>
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="1.jpg" /></div>
+                <div class="swiper-slide"><img src="2.jpg" /></div>
+                <div class="swiper-slide"><img src="3.jpg" /></div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="sub-title">
+            <h1>TEAM <span>PEAK PERFORMANCE</span></h1>
+          </div>
         </div>
       </div>
-      <div class="slider">
-        <img name="slide"/>
-      </div>
-    </div>
       <!--insert img-->
       
       <!--about section starts-->
@@ -172,6 +204,7 @@
     </div>
 
     <!-- javascript-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

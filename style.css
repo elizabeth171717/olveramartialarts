@@ -145,9 +145,9 @@ Global Styles
 .sub-title {
   color: rgb(148, 23, 23);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Pathway Gothic One", sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +195,7 @@ span {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 
 
   .home {
@@ -221,7 +221,7 @@ span {
     color: white;
   }
   .contact p {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
   }
 

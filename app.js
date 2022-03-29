@@ -2,27 +2,31 @@
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 
-var i = 0; // start point
-var images = [];
- var time = 3000;
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    autoplay: {
+       
+            delay: 3000,
+            disableOnInteraction: false,
+        
+    },
 
- //image list
-  images[0] = '1.jpg';
-  images[1] = 'peak3.jpg';
-  images[2] = '5.jpg';
+    loop: true,
   
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   
-
-  function changeImg() {
-      document.slide.src = images[i];
-
-      if(i < images.length - 1) {
-          i++;
-        } else {
-            i = 0;
-        }
-
-        setTimeout("changeImg()", time)
-  }
-
-  window.onload = changeImg;
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

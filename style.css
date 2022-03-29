@@ -173,9 +173,7 @@ span {
 }
 
 @media (max-width: 1000px) {
-  .main-container {
-    width: 100%;
-  }
+ 
 
   .banner {
     width: 100%;
@@ -198,10 +196,7 @@ span {
 }
 
 @media (max-width: 500px) {
-  .main-container {
-    width: 100%;
-    max-width: 100%;
-  }
+
 
   .home {
     width: 100%;

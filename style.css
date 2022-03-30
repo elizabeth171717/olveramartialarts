@@ -214,15 +214,20 @@ span {
     flex-direction: column;
     padding: 30px 15px;
   }
-  .contact {
+  .contact-h {
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
   }
-  .contact p {
+  .contact-h p {
     font-size: 10px;
     font-weight: bold;
+  }
+  
+  .contact-h p a{
+    font-size: 10px;
+   
   }
 
   .logo {

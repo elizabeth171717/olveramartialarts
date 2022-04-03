@@ -113,17 +113,28 @@ Global Styles
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: black;
   padding: 10px 25px;
 }
 .contact-h {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #fff;
+  padding: 20px 30px;
 }
 .contact-h p {
   font-size: 24px;
   font-weight: bold;
+ 
+}
+
+.fa-phone {
+  margin-right: 5px;
+}
+.contact-h a {
+  font-size: 24px;
+  color: #fff;
  
 }
 
@@ -140,6 +151,7 @@ Global Styles
 .banner {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .sub-title {
@@ -209,6 +221,7 @@ span {
   }
 
   .header {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -218,7 +231,9 @@ span {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
+    padding: 20px 0;
   }
   .contact-h p {
     font-size: 10px;
@@ -244,24 +259,20 @@ span {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
-  .sub-title {
-    color: rgb(148, 23, 23);
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: "Pathway Gothic One", sans-serif;
-    letter-spacing: 1px;
-  }
-  span {
-    color: white;
-  }
+ 
 
   .slider {
     width: 90%;
-    height: 200px;
+    height: 300px;
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper {
@@ -278,18 +289,6 @@ span {
 /*HERO SECTION ENDS*/
 
 /**************************************I*N*S*E*R*T**********************************************/
-.insert {
-  width:100%;
-  diplay: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.insert img {
-  width: 90%;
- border-radius: none;
-  border: none;
-}
 
 /*ABOUT SECTION STARTS*/
 .about {

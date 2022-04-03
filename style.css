@@ -138,6 +138,33 @@ Global Styles
  
 }
 
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  
+  padding: 0 20px;
+ 
+}
+
+.promo {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.promo p {
+ 
+  font-family: 'Chewy', cursive;
+
+  text-decoration: underline;
+  color: white;
+  text-shadow: 2px 2px 4px #f1ecec;
+  letter-spacing: 1px;
+}
+
 .logo {
   width: 100%;
   display: flex;
@@ -584,6 +611,10 @@ footer p {
 
   .banner {
     width: 100%;
+  }
+  
+  .promo p {
+    font-size: 8px;
   }
 
   /*ABOUT*/

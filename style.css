@@ -641,7 +641,29 @@ footer p {
   .promo p {
     font-size: 10px;
   }
+  
+  /*OUR PROGRAMS*/
 
+  .programns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+   
+}
+  
+  .programns-con h1 {
+ 
+    font-size: 25px;
+    color: rgb(148, 23, 23);
+}
+  
+  .programns-con ul li {
+    
+    font-size: 16px;
+    
+}
+  
   /*ABOUT*/
 
   .about-text {

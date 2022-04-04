@@ -313,6 +313,26 @@ span {
   }
 }
 
+/*program start*/
+.programns {
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 30px 0;
+}
+
+.programns-con h1 {
+  margin: 30px 0;
+  font-weight: bold;
+ 
+}
+.programns-con ul li {
+  font-family: 'Rubik Bubbles', cursive;
+  font-size: 30px;
+  color: rgb(105, 105, 105);
+}
+
+
 /*HERO SECTION ENDS*/
 
 /**************************************I*N*S*E*R*T**********************************************/
@@ -614,7 +634,7 @@ footer p {
   }
   
   .promo p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   /*ABOUT*/

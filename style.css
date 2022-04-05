@@ -548,9 +548,16 @@ padding: 30px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+ background-image: url(belt1.jpg);
+   background-position: center;
   text-align: center;
   gap: 0.75rem;
+}
+
+.contact-info p{
+  color: var(--clr-black);
+ font-size: 2rem;
+ font-weight: bold;
 }
 
 .contact-info i {

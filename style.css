@@ -341,6 +341,7 @@ padding: 30px 0;
   width: 100%;
   text-align: center;
   padding: 50px 0;
+  background-color:grey;
 }
 
 .find-us-info {
@@ -749,6 +750,10 @@ footer p {
 }
   
   /*FIND US*/
+  .find-us {
+  padding: 30px 0;
+
+}
   
   .box {
    padding: 5px 20px;

@@ -600,6 +600,8 @@ footer p {
 @media (max-width: 950px) {
   .container {
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .banner {

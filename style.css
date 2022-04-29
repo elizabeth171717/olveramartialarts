@@ -254,14 +254,17 @@ span {
     flex-direction: column;
     padding: 30px 15px;
   }
+  
+  
   .contact-h {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+   
     align-items: center;
     color: white;
     padding: 20px 0;
-  }
+}
   .contact-h p {
     font-size: 10px;
     font-weight: bold;

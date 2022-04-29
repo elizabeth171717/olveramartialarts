@@ -265,13 +265,16 @@ span {
     color: white;
     padding: 20px 0;
 }
+   .contact-h .btn{
+  margin-top:20px
+}
   .contact-h p {
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bold;
   }
   
   .contact-h p a{
-    font-size: 10px;
+    font-size: 20px;
    
   }
 

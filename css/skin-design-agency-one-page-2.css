@@ -44,7 +44,7 @@ Copyright: ThemeMountain
 
 body{
 	/*font-family: 'Open Sans', 'Helvetica Neue', sans-serif;*/
-	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
 	letter-spacing: 0;
 	font-weight: 400;
 	font-size: 1.4rem;
@@ -70,7 +70,7 @@ textarea,
 .grid-filter-menu a{
 	/*font-family: 'Raleway', 'Helvetica Neue', sans-serif;*/
 
-	font-family: 'Playfair Display', 'Times', serif;
+	font-family: 'Raleway','Playfair Display', 'Times', serif;
 }
 
 /* Titles */

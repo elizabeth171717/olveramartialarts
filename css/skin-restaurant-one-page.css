@@ -43,7 +43,7 @@ Copyright: ThemeMountain
 */
 
 body{
-	font-family: 'Playfair Display', 'Helvetica Neue', sans-serif;
+	font-family:'Helvetica Neue', sans-serif;
 	letter-spacing: 0;
 	font-weight: 300;
 	font-size: 1.4rem;
@@ -71,7 +71,7 @@ textarea,
 .grid-filter-menu a,
 .counter,
 .call-to-action-2 p{
-	font-family: 'Playfair Display', 'Helvetica Neue', sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
 }
 
 /* Titles */

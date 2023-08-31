@@ -56,7 +56,7 @@ justify-content: center;
 nav .phone-wrap {
    display: flex;
    justify-content: center;
-      
+      align-items: center;
    }
 
 nav .phone-wrap a{
@@ -68,6 +68,9 @@ nav .phone-wrap a{
      color: black;
      font-weight: bold;
      font-size: 3rem;
+     margin-left: 5px;
+     margin-right: 5px;
+     margin-top: 5px;
  }
  
 
@@ -77,24 +80,16 @@ nav .phone-wrap a{
    }
 
    nav .social-links {
-    
     display: flex;
     justify-content: end;
       gap: 1rem;
    }
 
    nav .social-links a{
- color: black;
+ color: white;
  font-size: 2rem;
  
-      
-   }
-
-
-
-
-
-
+ }
 @media (max-width:50em) {
 
 }
@@ -102,14 +97,10 @@ nav .phone-wrap a{
 @media (max-width:35em) {
     nav .logo img {
         width: 50px;
-          
-       }
+           }
 
- 
-
-    nav .phone-wrap a{
-        
-        font-size: 1.15rem;
+nav .phone-wrap a{
+         font-size: 1.15rem;
      }
      
      nav .phone-wrap span{
@@ -123,37 +114,37 @@ nav .phone-wrap a{
     
     
        nav .social-links a{
-     color: black;
-     font-size: 1rem;
-     
-          
-       }
+         font-size: 1.25rem;
+     }
 }
 
 /********************HERO**********************/
 .hero{
+    padding-top: 50px;
     width: 100%;
     min-height: 80vh;
     margin-top: 10vh;
-    background-color: black;
+  
+    background-color: rgb(58, 52, 52);
     color: white;
     display: flex;
     flex-direction: column;
    align-items: center;
    justify-content: center;
    gap: 1rem;
+   padding-bottom: 30px;
 }
 
 
 .principles {
-    width: 100%;
+    width: 90%;
 }
 
 
  .principles h3{
     font-size: 2rem;
     font-weight: bold;
-    border-bottom: 1px solid rgb(136, 4, 4);
+    border-bottom: 5px solid rgb(136, 4, 4);
  }
 
  .principles h1{
@@ -166,16 +157,12 @@ nav .phone-wrap a{
     width:100%;
     display: flex;
     justify-content: space-around;
-   
-  
-   
-  }
+   }
 
  .hero .img-container .box{
    width: 250px;
     height: 350px;
-   
-  }
+   }
 
  .hero .img-container .box img{
     width: 100%;
@@ -191,11 +178,7 @@ nav .phone-wrap a{
   
   }
 
- 
-
-
-
- .glow {
+.glow {
    
     font-size: 2rem;
     color: #fff;
@@ -274,7 +257,7 @@ nav .phone-wrap a{
     .hero{
         width: 100%;
        min-height: 90vh;
-        
+      
     }
 
 
@@ -286,10 +269,11 @@ nav .phone-wrap a{
     
      .principles h3{
         font-family: 'Caveat', cursive;
-        letter-spacing: normal;
-        font-size: 1.75rem;
-        font-weight: normal;
-        border-bottom: 1px solid rgb(136, 4, 4);
+        letter-spacing: 3px;
+        font-size: 1.25rem;
+        font-weight:bold;
+        border-bottom: 3px solid rgb(136, 4, 4);
+        margin-top: 10px;
      }
     
 
@@ -297,6 +281,11 @@ nav .phone-wrap a{
       
         font-size: 2rem;
      }
+
+     .hero .img-container .box {
+        width: 70%;
+        
+    }
 
      .hero .img-container .one img{
         display: block;
@@ -472,6 +461,10 @@ article .email{
        padding-right: 30px;
     }
 
+    .about-info h2 {
+      font-size: 1.25rem;
+     }
+
     .img-slider {
          
         width: 100%;
@@ -497,7 +490,12 @@ article .email{
     .about-hours {
         padding-left: 10px;
        padding-right: 10px;
+      
     }
+    .about-hours ul {
+        margin-bottom: 10px;
+    }
+
     .about-hours ul li{
         padding: 3px;
     }
@@ -514,6 +512,15 @@ article .email{
             
             padding: 5px;
         }
+
+        .about-info p {
+        font-size: 2rem;
+    }
+ h2{
+    
+    font-size: 2.5rem;
+ }
+ 
     .about article div {
         width: 100%;
         padding-top: 10px;
@@ -524,7 +531,8 @@ article .email{
 
     .img-slider{
         width: 100%;
-        
+        margin-top: 5px;
+        margin-bottom: 5px;
        }
     .img-slider .image {
         width: 80%;
@@ -544,12 +552,27 @@ article .email{
     }
 
     article .phone, .email, .location {
+        width: 100%;
+        min-height: 25vh;
         padding: 10px;
         text-align: center;
-        font-size: 1rem;
+        
+    }
+   article  .phone a{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    article  .email a {
+        font-size: 1.75rem;
     }
     article .location {
        
+        font-size: 2rem;
+    }
+
+    .about-hours ul li {
+    
         font-size: 1.5rem;
     }
 

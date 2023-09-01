@@ -577,14 +577,14 @@ article .email{
        }
     .img-slider .image {
         width: 100%;
-        min-height: 60vh;
+        height: 500px;
         
        }
 
        .img-slider .image img{
         width: 100%;
-        object-fit: fill;
-        min-height: 60vh;
+        object-fit: cover;
+       height: 100%;
        }
 
     .img-slider .image{

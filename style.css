@@ -33,6 +33,9 @@ ul{
     p {
         font-size: 1.50rem;
      }
+     ul li {
+        font-size: 1.50rem;
+     }
  }
  
  ul li {
@@ -268,14 +271,21 @@ nav .logo img{
         width: 100%;
        min-height: 100vh;
        margin-top: 10vh;
-       padding-left: 5px;
-       padding-right: 5px;
+     
        align-items: center;
+
+       background-image: url('images/bgimg.jpg');
+       background-attachment: fixed;
+       background-size:cover;
+       background-repeat: no-repeat;
+       background-position: center;
     }
     
     .principles {
         width: 90%;
        margin-left: 0px;
+     
+       text-align: center;
        }
 
        .glow {
@@ -283,15 +293,15 @@ nav .logo img{
        color: black;
        font-size: 1.75rem;
     }
+
+    .phone-wrap {
+        width: 100%;
+    }
     .phone-wrap a{
        
         font-size: 1.50rem;
      }
-    .principles {
-        padding: 10px;
-      text-align: center;
-    }
-    
+ 
     
      .principles h3{
        color: white;
@@ -747,10 +757,7 @@ align-items: center;
     justify-content: space-around;
     align-items: center;
     }
-     .list ul li {
-        gap:1rem;
-        font-size: 2rem;
-     }
+     
 
      .fa-check{
         font-weight: bold;

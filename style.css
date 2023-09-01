@@ -115,7 +115,7 @@ nav .logo img{
     margin-top: 18vh;
     background-image: url('images/bgimg.jpg');
     background-attachment: fixed;
-    background-size:cover;
+    
     background-repeat: no-repeat;
     background-position: center;
   
@@ -172,7 +172,7 @@ nav .logo img{
     font-size: 2.75rem;
     font-weight: bold;
     
-    color: blue;
+    color: yellow;
     border-bottom: 5px solid rgb(109, 108, 108);
     font-family: 'Caveat', cursive;
  }
@@ -247,7 +247,7 @@ nav .logo img{
        min-height: 100vh;
        margin-top: 10vh;
       align-items: center;
-      background-color: rgb(88, 88, 88);
+      
 
     }
     

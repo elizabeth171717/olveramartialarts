@@ -247,7 +247,7 @@ nav .logo img{
        min-height: 100vh;
        margin-top: 10vh;
       align-items: center;
-
+      background-color: rgb(88, 88, 88);
 
     }
     
@@ -763,7 +763,11 @@ align-items: center;
          }  
 
          
-
+         .programs-list {
+       
+        padding: 10px;
+        
+        }
 
          .coach-desc {
             flex-direction: column-reverse;

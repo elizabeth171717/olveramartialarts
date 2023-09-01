@@ -276,7 +276,7 @@ nav .logo img{
 
        background-image: url('images/helmet.png');
        background-attachment: fixed;
-     
+      background-size: auto;
        background-repeat: no-repeat;
        background-position: center;
     }

@@ -272,6 +272,7 @@ nav .logo img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+    row-gap: 3rem;
     }
 
     .bg-img {

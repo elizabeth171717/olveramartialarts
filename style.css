@@ -409,13 +409,15 @@ article .phone, .location{
 article .email{
     background-color: black;
     color:white;
-  
-    
+   background-image: url('images/belt.png');
+   background-position: center;
+   text-shadow: 2px 2px #0d0d0e;
 }
 
 .second a {
      font-size: 1.5rem;
     color:white;
+    
 }
 
 @media (max-width:70em){

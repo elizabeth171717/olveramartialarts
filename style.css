@@ -615,9 +615,13 @@ article .email a{
     article .phone, .email, .location {
         width: 100%;
         min-height: 25vh;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
         
+    }
+
+    article .phone,.location {
+      border: 5px igroove white;
     }
    article  .phone a{
         font-size: 2rem;

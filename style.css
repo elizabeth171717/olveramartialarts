@@ -273,7 +273,7 @@ nav .logo img{
     background-size: cover;
     background-position:center;
  
-    row-gap: 2rem;
+    row-gap: 1.50rem;
     }
 
     .bg-img {
@@ -292,7 +292,7 @@ nav .logo img{
        .glow {
        margin-left: 0px; 
        color: black;
-       font-size: 1.75rem;
+       font-size: 1.50rem;
     }
 
     .phone-wrap {
@@ -307,17 +307,17 @@ nav .logo img{
     
      .principles h3{
        
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight:bolder;
         text-shadow: 1px 1px #050505;
-       margin-bottom: 20px;
+       margin-bottom: 10px;
         font-family: 'Squada One', cursive;
      }
     
 
      .principles h1{
        
-        font-size: 2rem;
+        font-size: 1.75rem;
      }
     
 }
@@ -635,6 +635,23 @@ article .email a{
     .about-hours ul li {
     
         font-size: 1.5rem;
+    }
+
+}
+
+/**********************************MOBILE****************************************/
+.mobile {
+    display: none;
+}
+
+@media (max-width:35em) {
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+    .mobile img{
+        
+        width: 100%;
     }
 
 }

@@ -273,7 +273,7 @@ nav .logo img{
     background-size: cover;
     background-position:center;
  
-    row-gap: 1.50rem;
+    row-gap: .75rem;
     }
 
     .bg-img {
@@ -292,7 +292,7 @@ nav .logo img{
        .glow {
        margin-left: 0px; 
        color: black;
-       font-size: 1.50rem;
+       font-size: 1.25rem;
     }
 
     .phone-wrap {
@@ -307,7 +307,7 @@ nav .logo img{
     
      .principles h3{
        
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight:bolder;
         text-shadow: 1px 1px #050505;
        margin-bottom: 10px;

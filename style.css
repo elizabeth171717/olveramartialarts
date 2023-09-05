@@ -133,7 +133,7 @@ nav .logo img{
 }
 
 .phone-wrap {
-    padding: 5px;
+    padding: 15px;
     display: flex;
     justify-content: center;
        align-items: center;
@@ -581,13 +581,15 @@ article .email a{
     
     font-size: 2.5rem;
  }
- 
+
+
     .about article div {
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 0;
         padding-right: 0;
+        gap: 0;
     }
 
     .img-slider{
@@ -621,7 +623,8 @@ article .email a{
     }
 
     article .phone,.location {
-      border: 5px igroove white;
+      border-top: 5px double white;
+      border-bottom: 5px double white;
     }
    article  .phone a{
         font-size: 2rem;

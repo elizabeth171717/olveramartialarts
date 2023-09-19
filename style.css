@@ -573,7 +573,7 @@ article .email a{
 
         .about-info {
             
-            padding: 5px;
+            padding: 10px;
         }
 
      
@@ -613,6 +613,11 @@ article .email a{
       background-color: black;
       
     }
+p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+     }
 
     article .phone, .email, .location {
         width: 100%;
@@ -774,13 +779,6 @@ gap: .25rem;
         padding:50px;
         text-align: center;
         }
-
-       
-        .coach-desc p{
-           margin-bottom: 30px;
-           margin-top: 30px;
-            }
-
         
  
 }
@@ -845,7 +843,7 @@ align-items: center;
          
          .programs-list {
        
-        padding: 10px;
+        padding: 40px 20px;
         
         }
 
@@ -887,7 +885,7 @@ align-items: center;
     }
     .contact-text {
         text-align: center;
-        padding: 20px;
+       
         display: flex;
         align-items: center;
         justify-content: center;

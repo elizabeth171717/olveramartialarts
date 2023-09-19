@@ -681,12 +681,16 @@ article .email a{
     padding-bottom: 50px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     background-color: black;
+    background-image: url('images/banner2.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .list ul li {
     margin: 5px;
     padding: 5px;
     animation: drop 1.5s ease;
+    text-shadow: 2px 2px rgb(136, 4, 4);
 }
 .programs h1 {
     letter-spacing: 1rem;

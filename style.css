@@ -895,7 +895,7 @@ align-items: center;
         background-image: url('images/helmet.png');
         background-repeat: no-repeat;
         background-position:inherit;
-        
+        text-shadow: 2px 2px rgb(250, 250, 250);
     }
 
     .contact-text h2 {
@@ -966,7 +966,9 @@ text-shadow: 2px 2px rgb(136, 4, 4);
             margin-top: 20px;
         }
     }
-
+    iframe {
+        width: 100%;
+    }
 
     /***************************Back to top button********************************/
     #myBtn {

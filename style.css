@@ -432,7 +432,7 @@ margin-top:20vh;
     text-align: center;
 }
 article .phone, .location{
-    background-color: black;
+    background-color: rgb(136, 4, 4);
     color:white;
   
     
@@ -892,11 +892,16 @@ align-items: center;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        background-image: url('images/helmet.png');
+        background-repeat: no-repeat;
+        background-position:inherit;
+        
     }
 
     .contact-text h2 {
 margin-bottom: 10px;
 letter-spacing: .25rem;
+text-shadow: 2px 2px rgb(136, 4, 4);
 
     }
 

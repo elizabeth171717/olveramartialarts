@@ -188,6 +188,14 @@ nav .logo img{
     font-size: 3.5rem;
  }
 
+ .hero a button {
+    margin-left: 10px;
+    font-size: 2rem;
+   
+    text-align: center;
+    padding: 10px;
+      }
+
 .glow {
     margin-left: 10px;
     font-size: 2rem;
@@ -294,6 +302,13 @@ nav .logo img{
        color: black;
        font-size: 1.25rem;
     }
+
+    .hero a button {
+        margin-left: 0px; 
+       
+        font-size: 1.25rem;
+     }
+
 
     .phone-wrap {
         width: 100%;

@@ -245,6 +245,7 @@
           </div>
         </div>
       </section>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuY_HTTEMSpLDEsmjuHZ8qTrmfay3tFe2iK9L8-YtAklEfMQ/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0" style="margin: 10px 0;">Loading…</iframe>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.2667491760976!2d-84.26317192525053!3d33.93426672395229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5094138da101f%3A0xba98acb502c192d3!2sOlvera%20Martial%20Arts!5e0!3m2!1sen!2sus!4v1695094543642!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <footer>
        
@@ -252,8 +253,39 @@
         <p>NEED A WEBSITE LIKE THIS ONE?  <a href="mailto:777etr@gmail.com">777etr@gmail.com</a></p>
       
       </footer>
+
       
     </div>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "547732455385071");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
   </body>
 </html>

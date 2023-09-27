@@ -745,7 +745,7 @@ p{
 .list ul li {
     margin: 5px;
     padding: 5px;
-    animation: drop 1.5s ease;
+    animation: drop 1.5s ease-in;
     text-shadow: 2px 2px rgb(136, 4, 4);
 }
 .programs h1 {

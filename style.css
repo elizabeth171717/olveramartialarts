@@ -104,36 +104,33 @@ nav .logo img{
          font-size: 2rem;
      }
 }
-
-
 /****************************NAV ENDS***********************************/
 
-/********************HERO***STARTS88888888888******************/
+
+/********HOME SECTION*******************/
+/********************HERO*********************/
+
 .hero{
    width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     margin-top: 18vh;
-    color: white;
+   
     display: flex;
     flex-direction: column;
    align-items:flex-start;
    justify-content: flex-start;
    gap: 1rem;
+   background: url(images/bgimg.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
  
 }
 
-.bg-img {
-    width: 100%;
-    min-height: 80vh;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-    overflow: hidden;
-}
 
 .phone-wrap {
-    padding: 15px;
+    padding: 20px 15px;
     display: flex;
     justify-content: center;
        align-items: center;
@@ -222,16 +219,7 @@ nav .logo img{
     animation: glow 1s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f50404, 0 0 40px #e60000, 0 0 50px #d30101, 0 0 60px #ac0101, 0 0 70px #940101;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #fd4242, 0 0 50px #fd3333, 0 0 60px #ff1515, 0 0 70px #fd0b0b, 0 0 80px #ff0202;
-    }
-
-  }
+  
 
   @keyframes drop {
     0%{
@@ -245,32 +233,28 @@ nav .logo img{
     }
   }
 
-  @media (max-width:70em) {
-  
-}
 
+
+ /** @media (max-width:80em) {
+    .hero{
+        margin-top: 16vh;
+       min-height: 100vh;
+        
+       }
+}
+**/
   
 @media (max-width:60em) {
     .hero{
-       
-         min-height: 100vh;
-         margin-top: 20vh;
-        
+
+     min-height: 100vh;
       
      }
      
-     .bg-img {
-        margin-top: 20vh;
-         min-height: 100vh;
-        
-     }
-    
-.phone-wrap {
-  margin-top: -10px;
- }
+
     .phone-wrap a{
        
-        font-size: 2.5rem;
+        font-size: 2.25rem;
      }
      
      .principles h3{
@@ -293,20 +277,12 @@ nav .logo img{
        min-height: 100vh;
        margin-top: 10vh;
       align-items: center;
-      background-color: rgb(207, 204, 204);
-       background-image: url('images/bgimg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
+     
  
     row-gap: .75rem;
     }
 
-    .bg-img {
-       display: none;
-    
-    }
-    
+   
     
     .principles {
         width: 90%;
@@ -315,12 +291,7 @@ nav .logo img{
        text-align: center;
        }
 
-       .glow {
-       margin-left: 0px; 
-       color: black;
-       font-size: 1.25rem;
-    }
-
+  
     .hero a button {
         margin-left: 0px; 
       
@@ -329,7 +300,8 @@ nav .logo img{
 
     .phone-wrap {
         width: 100%;
-        margin-top: 0px;
+        padding: 10px;
+       
     }
     .phone-wrap a{
        
@@ -343,7 +315,7 @@ nav .logo img{
         font-weight:bolder;
         text-shadow: 1px 1px #050505;
        margin-bottom: 10px;
-        font-family: 'Squada One', cursive;
+       
      }
     
 

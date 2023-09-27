@@ -7,6 +7,8 @@
 body {
     overflow-x: hidden;
     font-family: 'Squada One', cursive;
+    --nav-load-time: 300ms;
+    --nav-link-load-time:500ms;
 }
 
 
@@ -63,6 +65,8 @@ nav {
   top: 0; /* Position the navbar at the top of the page */
  z-index: 1;
  overflow: hidden;
+ /*animation*/
+ animation: nav-load var(--nav-load-time) ease-in;
 }
 
 nav .logo {
@@ -74,6 +78,12 @@ justify-content: center;
 nav .logo img{
     width: 200px;
        object-fit: cover;
+       animation: nav-links-load;
+ animation-duration: var(--nav-link-load-time);
+ animation-timing-function: ease-in;
+ animation-delay: var(--nav-load-time);
+ animation-fill-mode: forwards;
+ transform: scale(0);
     }
 
    nav .social-links {
@@ -85,8 +95,13 @@ nav .logo img{
    nav .social-links a{
  color: white;
  font-size: 3rem;
- 
- }
+ animation: nav-links-load;
+ animation-duration: var(--nav-link-load-time);
+ animation-timing-function: ease-in;
+ animation-delay: var(--nav-load-time);
+ animation-fill-mode: forwards;
+ transform: scale(0);
+}
 
 
 @media (max-width:35em) {
@@ -104,6 +119,28 @@ nav .logo img{
          font-size: 2rem;
      }
 }
+
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+       transform: translateY(0); 
+    }
+}
+
+@keyframes nav-links-load {
+    0%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.5);
+    }
+    100%{
+       transform: scale(1); 
+    }
+}
+
 /****************************NAV ENDS***********************************/
 
 
@@ -202,8 +239,14 @@ nav .logo img{
     font-weight: bold;
     border-radius: 12px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    
+    animation-name: slow-motion;
+    transform: translateX(-1000%);
+    animation-duration: var(--nav-link-load-time);
+ animation-timing-function: ease-in;
+ animation-delay: var(--nav-load-time);
+ animation-fill-mode: forwards;
+ transform: scale(0);
 
       }
 
@@ -211,25 +254,20 @@ nav .logo img{
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
           }
 
-.glow {
-    margin-left: 10px;
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  
 
-  @keyframes drop {
+
+  @keyframes slow-motion {
     0%{
-        opacity: 0;
-        transform: translateY(-80px);
+     
+        transform: translateX(-1000px);
+    }
+
+    90% {
+        transform: translateX(50px);
     }
 
     100% {
-        opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
   }
 
@@ -433,6 +471,8 @@ margin-top:20vh;
 .about-hours ul li{
     padding: 5px;
     margin: 5px;
+      
+    
 }
 
 .second div {
@@ -443,7 +483,7 @@ margin-top:20vh;
 article .phone, .location{
     background-color: rgb(136, 4, 4);
     color:white;
-  
+   
     
 }
 
@@ -459,11 +499,13 @@ article .email{
 article .email a{
    
     color:red;
+   
 }
 
 .second a {
      font-size: 1.5rem;
     color:white;
+    
     
 }
 

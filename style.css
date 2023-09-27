@@ -280,6 +280,7 @@ nav .logo img{
      
       background: url(images/bgimg.jpg);
       background-blend-mode: multiply;
+      background-size: cover;
       
       background-repeat: no-repeat;
       background-position: center center;

@@ -278,7 +278,11 @@ nav .logo img{
        margin-top: 10vh;
       align-items: center;
      
- 
+      background: url(images/bgimg.jpg);
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
     row-gap: .75rem;
     }
 

@@ -27,8 +27,16 @@ ul{
     font-size: 3rem;
  }
 
- p {
+ p,li {
     font-size: 1.75rem;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+ }
+
+ p{
+    font-size: 1.75rem;
+   
  }
 
  @media (max-width:35em) {
@@ -120,26 +128,7 @@ nav .logo img{
      }
 }
 
-@keyframes nav-load {
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-       transform: translateY(0); 
-    }
-}
 
-@keyframes nav-links-load {
-    0%{
-        transform: scale(1);
-    }
-    90%{
-        transform: scale(1.5);
-    }
-    100%{
-       transform: scale(1); 
-    }
-}
 
 /****************************NAV ENDS***********************************/
 
@@ -256,22 +245,7 @@ nav .logo img{
 
 
 
-  @keyframes slow-motion {
-    0%{
-     
-        transform: translateX(-1000px);
-    }
-
-    90% {
-        transform: translateX(50px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-  }
-
-
+  
 
  /** @media (max-width:80em) {
     .hero{
@@ -451,16 +425,7 @@ margin-top:20vh;
      display: none;
  }
  
- /* Fading animation */
- .fade {
-     animation-name: fade;
-     animation-duration: 1.5s;
-   }
-   
-   @keyframes fade {
-     from {opacity: .4} 
-     to {opacity: 1}
-   }
+ 
    
  
 .about-hours {
@@ -745,7 +710,7 @@ p{
 .list ul li {
     margin: 5px;
     padding: 5px;
-    animation: drop 1.5s ease-in;
+    
     text-shadow: 2px 2px rgb(136, 4, 4);
 }
 .programs h1 {
@@ -1019,23 +984,35 @@ text-shadow: 2px 2px rgb(136, 4, 4);
         width: 100%;
     }
 
-    /***************************Back to top button********************************/
-    #myBtn {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */
-        background-color: red; /* Set a background color */
-        color: white; /* Text color */
-        cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
-      }
+    /***************************Fading animation********************************/
+    
       
-      #myBtn:hover {
-        background-color: #555; /* Add a dark-grey background on hover */
+    @keyframes nav-load {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+           transform: translateY(0); 
+        }
+    }
+    
+    @keyframes nav-links-load {
+        0%{
+            transform: scale(1);
+        }
+        90%{
+            transform: scale(1.5);
+        }
+        100%{
+           transform: scale(1); 
+        }
+    }
+
+    @keyframes fade {
+        from{
+    opacity: 0;
+        }
+        to{
+          opacity: 1;
+        }
       }

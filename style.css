@@ -1008,6 +1008,21 @@ text-shadow: 2px 2px rgb(136, 4, 4);
         }
     }
 
+    @keyframes slow-motion {
+        0%{
+         
+            transform: translateX(-1000px);
+        }
+    
+        90% {
+            transform: translateX(50px);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+      }
+
     @keyframes fade {
         from{
     opacity: 0;

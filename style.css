@@ -131,14 +131,19 @@ color: #ffffff;
 @media (max-width:500px) {
 
   .top-nav{
-    padding: .75rem;
+    padding: .25rem;
   }
 
   .bottom-nav{
     
-    padding: .75rem;
+    padding: .50rem;
     gap: .25rem;
   
+  }
+
+  .phone-num{
+    display: flex;
+    justify-content: center;
   }
 
   .logo img{

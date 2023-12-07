@@ -135,11 +135,10 @@ color: #ffffff;
   }
 
   .bottom-nav{
-    flex-direction: column;
+    
     padding: .75rem;
     gap: .25rem;
-   justify-content: center;
-   align-items: center;
+  
   }
 
   .logo img{

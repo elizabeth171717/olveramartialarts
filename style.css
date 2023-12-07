@@ -375,7 +375,7 @@ background-position: right;
   background-image: url(images/tkd.jpg);
   background-repeat: no-repeat;
   background-position: right;
-  padding: 5rem;
+  padding: 5rem 0;
   gap: 3rem;
  }
 

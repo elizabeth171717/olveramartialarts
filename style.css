@@ -99,7 +99,7 @@ justify-content: center;
   flex:1;
   display: flex;
   justify-content: center;
-  background-color: darkgreen;
+
 }
 
 .company-name h1{
@@ -156,7 +156,7 @@ color: #ffffff;
 @media (max-width:500px) {
 
   .top-nav{
-    padding: 0;
+    padding: .20rem 0;
   }
 
   .bottom-nav{

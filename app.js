@@ -16,7 +16,13 @@ gsap.to(masks[1], {
   }
 });
 
-
+const myText = new SplitType(".my-text");
+gsap.to(".char", {
+  y: 0,
+  stagger: 0.1,
+  delay: 0.2,
+  duration: 0.1,
+});
 
 
 ScrollTrigger.defaults({

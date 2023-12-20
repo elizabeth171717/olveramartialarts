@@ -99,10 +99,14 @@ justify-content: center;
   flex:1;
   display: flex;
   justify-content: center;
-  color: #000000;
-  text-shadow: 1px 1px 1px #ffffff;
+  background-color: darkgreen;
 }
 
+.company-name h1{
+ font-size: 3rem;
+ color: #000000;
+  text-shadow: 1px 1px 1px #ffffff;
+}
 .my-text {
   overflow: hidden;
 }
@@ -138,10 +142,21 @@ color: #ffffff;
     color: #ffffff;
  }
 
+
+ 
+@media (max-width:1000px) {
+
+  .company-name h1{
+    font-size: 2rem;
+    color: #000000;
+     text-shadow: 1px 1px 1px #ffffff;
+   }
+}
+
 @media (max-width:500px) {
 
   .top-nav{
-    padding: .25rem;
+    padding: 0;
   }
 
   .bottom-nav{
@@ -155,9 +170,13 @@ color: #ffffff;
   .logo img{
   width:90px;
     }
-
+    .company-name h1{
+      font-size: 1rem;
+      color: #000000;
+       text-shadow: 1px 1px 1px #ffffff;
+     }
   .social-media{
-    gap: .50rem;
+    gap: .25rem;
     }
     
     .social-media .fa-brands {

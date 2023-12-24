@@ -123,7 +123,7 @@ gap: 1rem;
 }
 
 .social-media .fa-brands {
-font-size: 30px;
+font-size: 3rem;
 color: #ffffff;
 }
 
@@ -151,6 +151,11 @@ color: #ffffff;
     color: #000000;
      text-shadow: 1px 1px 1px #ffffff;
    }
+
+   .company-name{
+    flex:2;
+  }
+
 }
 
 @media (max-width:500px) {
@@ -159,31 +164,41 @@ color: #ffffff;
     padding: .20rem 0;
   }
 
+  
+.logo {
+  justify-content:flex-start;
+  }
+
+  .logo img{
+    width:90px;
+      }
+   
+      .company-name h1{
+        font-size: 1.50rem;
+        color: #000000;
+         text-shadow: 1px 1px 1px #ffffff;
+       }
+
+  .social-media{
+justify-content: flex-end;
+ margin-right: .50rem;
+  }
+
+  .social-media{
+    gap: .25rem;
+    }
+    
+    .social-media .fa-brands {
+    font-size: 1.50rem;
+    }
+
   .bottom-nav{
    
     padding: .50rem;
     gap: 1rem;
   
   }
-
- 
-  .logo img{
-  width:90px;
-    }
-    .company-name h1{
-      font-size: 1rem;
-      color: #000000;
-       text-shadow: 1px 1px 1px #ffffff;
-     }
-  .social-media{
-    gap: .25rem;
-    }
-    
-    .social-media .fa-brands {
-    font-size: 30px;
-    }
-
-    .bottom-nav .phone-num a, .fa-phone {
+.bottom-nav .phone-num a, .fa-phone {
       font-size: 1rem;
   
    }
@@ -439,37 +454,26 @@ background-position: right;
   
 }
 
-.map-container {
-flex: 1;
-  display: flex;
-  justify-content: center;
- width: 500px;
+
+
+.map-img{
+
+  background-image: url(images/cesia\ ailin.jpg);
+
 }
 
-.image{
-  flex: 1;
-  background-image: url(images/cesia\ ailin.jpg);
-  background-position: center;
-  background-size: cover;
- width: 500px;
-}
 
 
 @media (max-width:800px) {
-  .inner-wrapper {
-    width: 100%;
-    flex-direction: column;
-    }
-    
+ 
     .map-container{
       width: 100%;
-   height: auto;
-     justify-content: center;
-     align-items: center;
+   min-height: auto;
+    
       }
       .image{
         width: 100%;
-    height: auto;
+    min-height: auto;
        }
       
     

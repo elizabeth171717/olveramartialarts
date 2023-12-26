@@ -308,13 +308,21 @@ gap: 1rem;
 
  }
 
- .email, .form{
+ .email{
 color: #ffffff;
 background-color:#f10a0a;
 background-image: url(images/helmet.png);
 background-repeat: no-repeat;
 background-position: right;
  }
+
+.form{
+  color: #ffffff;
+  background-color:#f10a0a;
+  background-image: url(images/helmet.png);
+  background-repeat: no-repeat;
+  background-position: left;
+   }
 @media (max-width:1000px) {
 
   .get-started-container {

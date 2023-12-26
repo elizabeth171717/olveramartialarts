@@ -422,6 +422,12 @@ background-position: right;
       
 }
 
+@media (max-width:500px) {
+  .left-container .paragraph ul li{
+    margin-bottom: .50rem;
+    }
+   
+}
 
  /*********************INSTAGRAM*******************/
 
@@ -466,15 +472,11 @@ background-position: right;
  }
 
 
-@media (max-with:600px) {
+@media (max-with:500px) {
   .peak {
-   
-    padding: 3rem  0;
-   
+   padding: 3rem  0;
    }
-  .peak iframe{
-    width: 100%;
-  }
+
 }
  
 

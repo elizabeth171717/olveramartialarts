@@ -63,10 +63,17 @@ ul li {
   font-size: 1.75rem;
   text-decoration:overline;
   margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+ 
   font-family: 'Bebas Neue', sans-serif;
 }
+
+@media (max-width:500px) {
+  .sub-heading{
+    font-size: 1.25rem;
+    padding: 0.50rem;
+   }
+}
+
 
 h3 {
   font-size: 1.50rem;
@@ -79,6 +86,12 @@ p {
   font-weight: bold;
 }
 
+@media (max-width:500px) {
+  p{
+    
+    padding: 0 1rem;
+   }
+}
 
 /******NAV SECTION****************/
 
@@ -323,6 +336,12 @@ background-position: right;
   background-repeat: no-repeat;
   background-position: left;
    }
+
+   .email a, .form a{
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #140f0f;
+    text-decoration:underline;
+     }
 @media (max-width:1000px) {
 
   .get-started-container {
@@ -332,7 +351,8 @@ background-position: right;
 }
 @media (max-width:500px) {
    .form, .phone, .email, .location {
-    gap: .5rem;
+    gap: .25rem;
+    padding: 3rem 1rem;
    }
    
 }
@@ -357,7 +377,7 @@ background-position: right;
   .left-container {
   width: 50%;
   color: #ffffff;
-  padding: 2rem;
+  padding: 3rem;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -426,7 +446,11 @@ background-position: right;
   .left-container .paragraph ul li{
     margin-bottom: .50rem;
     }
+    .left-container {
+      
+      padding:3rem 0;
    
+     }
 }
 
  /*********************INSTAGRAM*******************/
@@ -438,12 +462,13 @@ background-position: right;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 3rem 1rem;
   gap: 3rem;
   color: #ffffff;
   display: flex;
   flex-direction: column;
  }
+
 
 /************************gym classes**************************************/
  .gym-classes {
@@ -451,8 +476,8 @@ background-position: right;
   background-image: url(images/tkd.jpg);
   background-repeat: no-repeat;
   background-position: right;
-  padding: 5rem .50rem;
-  gap: 3rem;
+  padding: 3rem 1rem;
+  gap: 5rem;
  }
 
 
@@ -467,28 +492,29 @@ background-position: right;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem ;
+  padding: 3rem 0;
   gap: 3rem;
  }
 
 
-@media (max-with:500px) {
-  .peak {
-   padding: 3rem  0;
-   }
-
-}
- 
+ @media (max-width:500px) {
+  .peak iframe{
+    width: 100%;
+     
+    }
+  }
 
 
 /***************************MAP***********************************/
 .map {
  padding: 3rem 0 ;
+ 
   }
 
 .map-img{
   background-image: url(images/cesia\ ailin.jpg);
 }
+
 
 
 

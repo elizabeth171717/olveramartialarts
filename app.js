@@ -20,7 +20,7 @@ const myText = new SplitType(".my-text");
 gsap.to(".char", {
   y: 0,
   stagger: 0.1,
-  delay: 0.2,
+  delay: 0.1,
   duration: 0.1,
 });
 
@@ -45,3 +45,5 @@ gsap.to(".left-container", {
   backgroundColor: "#000000", 
   ease: "none"
 });
+
+

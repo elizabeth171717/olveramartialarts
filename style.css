@@ -256,12 +256,12 @@ justify-content: flex-end;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    
+    background-color: black;
   }
   .img-mask img {
     height: 100vh;
     width: 100%;
-    object-fit:fill;
+    object-fit:cover;
   }
   
   .overlay {

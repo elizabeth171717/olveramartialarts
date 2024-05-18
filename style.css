@@ -9,7 +9,19 @@
    
 }
 
+.big{
+  display:none;
+}
 
+ @media (min-width:45rem) {
+   .big{
+  display:block;
+}
+/*bottom nav*/
+.bottom-nav{
+ display:none;
+  }
+      }
 /**************GLOBAL STYES***************/
 body {
   font-family: 'Play', sans-serif;

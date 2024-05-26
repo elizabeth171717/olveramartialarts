@@ -1,263 +1,189 @@
+/*
+=============== 
+Imported Fonts
+===============
+*/
 /*google fonts*/
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chonburi&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chonburi&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chonburi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chonburi&family=Play&display=swap');
 
-*{
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary/main color */
+  --clr-primary-1:  hsl(205, 86%, 17%);
+   /* red dark */
+   --clr-red-dark:#f10a0a;
+ 
+ 
+  /* darkest grey - used for headings */
+  --clr-grey-1:#3f3f3d;
+ 
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  /* white */
+  --clr-white: #fff;
+ 
+  /* white */
+  --clr-black: #000000;
+  --ff-primary: 'Play', sans-serif;
+  --ff-secondary: 'Bebas Neue', sans-serif;
+ 
+ }
+
+
+
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
    
-}
-
-.big{
-  display:none;
-}
-
- @media (min-width:45rem) {
-   .big{
-  display:block;
-}
-/*bottom nav*/
-.bottom-nav {
- display:none;
   }
-      }
-/**************GLOBAL STYES***************/
-body {
-  font-family: 'Play', sans-serif;
-}
 
-.section-containers{
-  margin-top: 5rem;
-  max-width: 100%;
-  width: 100%;
-  
-}
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    font-family: var(--ff-primary);
+    font-weight: bold;
+  }
 
-section{
-    width: 100%;
-}
+  .red, .different{
+    background-color: var(--clr-red-dark);
+  }
 
-a{
-  text-decoration: none;
-}
-
-ul li {
-  list-style-type:none;
-  font-size: 1.50rem;
-  color: #f10a0a;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #000000;
-  margin-bottom: .25rem;
-}
-
-/*MAIN HEADING*/
-.heading{
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-  font-size: 3rem;
-  background-color:#000000;
-  color: #ffffff;
-  
- }
-
- @media (max-width:500px) {
-  .heading{
-    font-size: 1.75rem;
-   }
-}
-
-/*SUB HEADING*/
-
-.sub-heading {
-  text-align: center;
-  font-size: 1.75rem;
-  text-decoration:overline;
-  margin-bottom: 1rem;
- 
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-@media (max-width:500px) {
-  .sub-heading{
-    font-size: 1.25rem;
-    padding: 0.50rem;
-   }
-}
-
-
-h3 {
-  font-size: 1.50rem;
-  font-weight: bold;
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-p {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-@media (max-width:500px) {
-  p{
+  /***GSAP****/
+  .animate{
     
-    padding: 0 1rem;
-   }
+  scale:1;
+}
+.hours-animation{
+  scale:1;
 }
 
-/******NAV SECTION****************/
+  a{
+    color: var(--clr-white);
+    text-decoration: none;
+  }
 
-nav {
-    width: 100%;
-   display: flex;
-    flex-direction: column;
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-   top: 0; /* Position the navbar at the top of the page */
-  z-index: 1;
-  background-color: #000000;
+  li {
+    list-style: none;
+  }
+
+  img{
+    display: block;
+    max-width: 100%;
+  }
+  
+  i{
+    font-size: 1.5rem;
+  }
+  
+  .section-title{
+    text-align: center;
+    padding: 2rem 1rem;
+    
+  }
+
+
+  .main-title{
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: blue;
+    
+  }
+
+h1{
+  opacity: 1;
+  scale: 1;
 }
 
-.top-nav{
+  @media (min-width:45rem) {
+    .section-title{
+      text-align: center;
+      padding: 3rem;
+      
+    }
+
+    .main-title{
+     font-size: 2.5em;
+    }
+  }
+  
+  /****************NAVIGATION*****************/
+
+  .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 999;
     width: 100%;
+    background-color: var(--clr-black);
+  }
+  .top-nav {
     display: flex;
-    align-items: flex-end;
-    
-  padding: .75rem;
-}
-
-
-.logo {
-flex: 1;
-display: flex;
-justify-content: center;
-}
-
-.company-name {
-  flex:1;
-  display: flex;
-  justify-content: center;
-
-}
-
-/*gsap animation*/
-
-.company-name h1{
- font-size: 3rem;
- color: #000000;
-  text-shadow: 1px 1px 1px #ffffff;
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-
-.my-text {
-  overflow: hidden;
-}
-.char {
-  transform: translateY(-115px);
-  transition: transform .5s;
-}
-
-.social-media{
-flex: 1;
-display: flex;
-justify-content: center;
-gap: 1rem;
-}
-
-.social-media .fa-brands {
-font-size: 3rem;
-color: #ffffff;
-}
-/*bottom nav*/
-.bottom-nav{
-  border-top: 3px solid #f10a0a;
+    justify-content: space-between;
     padding: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
+    align-items: center;
+    
+   
   }
 
+  .icons{
+    display: flex;
+    gap: 1rem;
 
-.bottom-nav .phone-num a, .fa-phone {
-    font-size: 2rem;
-    color: #ffffff;
- }
+  }
 
-
- 
-@media (max-width:1000px) {
-
-  .company-name h1{
-    font-size: 2rem;
-    color: #000000;
-     text-shadow: 1px 1px 1px #ffffff;
+.icons .fa-phone{
+    display: none;
    }
 
-   .company-name{
-    flex:2;
-  }
-
-}
-
-@media (max-width:500px) {
-
-  .top-nav{
-    padding: .20rem 0;
-  }
-
-  
-.logo {
-  justify-content:flex-start;
-  }
-
-  .logo img{
-    width:90px;
-      }
-   
-      .company-name h1{
-        font-size: 1.50rem;
-        color: #000000;
-         text-shadow: 1px 1px 1px #ffffff;
-       }
-
-  .social-media{
-justify-content: flex-end;
- margin-right: .50rem;
-  }
-
-  .social-media{
-    gap: .25rem;
-    }
-    
-    .social-media .fa-brands {
-    font-size: 1.50rem;
-    }
 
   .bottom-nav{
-   
-    padding: .50rem;
-    gap: 1rem;
-  
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--clr-white);
   }
-.bottom-nav .phone-num a, .fa-phone {
-      font-size: 1rem;
-  
-   }
+
+  @media (min-width:45rem) {
+  .icons .fa-phone{
+   display: block;
+  }
+
+  .bottom-nav{
+display: none;
+  }
+
+  i{
+    font-size: 2rem;
+  }
 }
- /**************************NAV ENDS*********************************/
+ /****************NAVIGATION*****************/
 
-
-/**ONSCROLL IMAGE REVEAL ***/
+  /**ONSCROLL IMAGE REVEAL ***/
 .revealer {
   width: 100%;
     position: relative;
     height: 100vh;
-    font-size: 50px;
-    text-align: center;
-    line-height: 100vh;
-    
+   
     background-color: black;
   }
   
@@ -270,283 +196,109 @@ justify-content: flex-end;
     justify-content: center;
     background-color: black;
   }
-  .img-mask img {
-    height: 100vh;
+
+  .img-mask img{
+    object-fit: cover;
+    height: 100%;
     width: 100%;
-    object-fit:fill;
+   
+  }
+
+
+  /**ONSCROLL IMAGE REVEAL ***/
+
+  
+  /**CONTACT SECTION ***/
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.contact-box h3{
+  font-size: 2rem;
+}
+ /**CONTACT SECTION ***/
+
+
+.inner-container, .map-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.inner-container ul li {
+ margin-bottom: .50rem;
+ 
+}
+
+@media (min-width:45rem) {
+  .hours ul li {
+    margin-bottom: 1rem;
+    
+   }
+  }
+
+.text-container{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+ }
+
+.paragraph{
+  padding: 2rem;
+}
+
+
+@media (min-width:45rem) {
+  .contact-container{
+display: flex;
+width: 100%;
+  }
+  .contact-box{
+    flex: 1;
+    border: 10px solid red;
   }
   
-  .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-   
-  }
+ .split{
+  display: flex;
+ }
 
-  @media (max-width:500px) {
-    .revealer {
-      width: 100%;
-       
-      }
-      
-      .img-mask {
-      
-        width: 100%;
-    object-fit:contain;
-      }
-      
-      .overlay {
-        width: 100%;
-     
-       
-      }
-  }
+.reverse{
+  flex-direction: row-reverse;
+}
+
+.animated-list{
  
-/**************GET STARTED****************/
- .get-started {
- padding-top:3rem;
-
-}
-
- .get-started-container {
-  width: 100%;
-  display: flex;
-  background-color: cornsilk;
-  margin-top: 3rem;
- }
-
- .get-started-container a{
-font-size: 1.5rem;
-font-weight: bold;
-color: #000000;
-text-shadow: 1px 1px 1px #ffffff;
- }
-
- .location, .phone, .email, .form{
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 3rem;
-gap: 1rem;
-
- }
-
- .email{
-color: #ffffff;
-background-color:#f10a0a;
-background-image: url(images/helmet.png);
-background-repeat: no-repeat;
-background-position: right;
- }
-
-.form{
-  color: #ffffff;
-  background-color:#f10a0a;
-  background-image: url(images/helmet.png);
-  background-repeat: no-repeat;
-  background-position: left;
-   }
-
-   .email a, .form a{
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #140f0f;
-    text-decoration:underline;
-     }
-@media (max-width:1000px) {
-
-  .get-started-container {
-    flex-direction: column-reverse;
-   }
-   
-}
-@media (max-width:500px) {
-   .form, .phone, .email, .location {
-    gap: .25rem;
-    padding: 3rem 1rem;
-   }
-   
-}
-
- /**************************GET STARTED ENDS**********************************/
- /************************ ABOUT SECTION STARTS ***************************/
-
-
-
-.inner-wrapper {
+  justify-content: flex-start;
  
-  width: 100%;
-  display: flex;
-  }
-
-  .reverse {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    }
-
-  .left-container {
-  width: 50%;
-  color: #ffffff;
-  padding: 3rem;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: #f10a0a;
- }
-
-.right-container {
-  width: 50%;
-  height: 80vh;
- background-image: url(images/bg2.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- }
-
- .reverse .right-container {
-  width: 50%;
-  background-image: url(medina.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- }
-
-@media (max-width:800px) {
-  .inner-wrapper {
-    width: 100%;
-    flex-direction: column;
-    }
-    
-    .reverse {
-      width: 100%;
-     flex-direction: column;
-     
-      }
-      .left-container {
-        width: 100%;
-      min-height: auto;
-       }
-      
-       .right-container {
-        width: 100%;
-        min-height: auto;
-      
-       }
-       .left-container .paragraph ul li{
-       margin-bottom: 1rem;
-       }
-      
-       .reverse .right-container {
-        width: 100%;
-        min-height: auto;
-       }
-      
-      
-       .reverse .left-container {
-        width: 100%;
-        min-height: auto;
-       }
-      
 }
 
-@media (max-width:500px) {
-  .left-container .paragraph ul li{
-    margin-bottom: .50rem;
-    }
-    .left-container {
-      
-      padding:3rem 0;
-   
-     }
+ .image-container{
+  flex:1;
+ }
+
+ .text-container{
+  flex:1;
+
+ }
+
+ .map-container{
+  flex:1
+ }
+
+ .paragraph{
+  padding: 2rem 4rem;
 }
-
- /*********************INSTAGRAM*******************/
-
- .Instagram {
-  width: 100%;
-  background: #000000;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 1rem;
-  gap: 3rem;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
- }
-
-
-/************************gym classes**************************************/
- .gym-classes {
-  width: 100%;
-  background-image: url(images/tkd.jpg);
-  background-repeat: no-repeat;
-  background-position: right;
-  padding: 3rem 1rem;
-  gap: 5rem;
- }
-
-
-/*******************************FACEBOOK***********************************/
- .peak {
-  width: 100%;
-  background-color: #000000;
-  background-image: url(images/chestprotector.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 0;
-  gap: 3rem;
- }
-
-
- @media (max-width:500px) {
-  .peak iframe{
-    width: 100%;
-     
-    }
   }
 
 
-/***************************MAP***********************************/
-.map {
- padding: 3rem 0 ;
- 
-  }
-
-.map-img{
-  background-image: url(images/cesia\ ailin.jpg);
-}
-
-
-
-
-
-/****************************FOOTER********************************/
 footer{
-  padding: 3rem;
-  background-color: #f10a0a;
+  padding: 2rem;
   text-align: center;
- 
-}
-
-footer a{
-text-decoration:overline;
-font-weight: bold;
-font-style: italic;
-}
-
-@media (max-width:500px) {
-  footer{
-    padding-bottom: 4rem;
-  }
 }

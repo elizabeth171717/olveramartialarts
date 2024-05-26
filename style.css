@@ -63,7 +63,7 @@ Global Styles
     font-weight: bold;
   }
 .red{
-backgroung-image:url("images/")
+background-image:url("images/belt.png")
 }
    .different{
     background-color: var(--clr-red-dark);

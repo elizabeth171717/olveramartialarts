@@ -255,7 +255,10 @@ display: none;
 }
 
 .classes{
-background-image:url("images/belt.png")
+background-image:url("images/belt.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  
 }
 
 @media (min-width:45rem) {

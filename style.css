@@ -62,10 +62,8 @@ Global Styles
     font-family: var(--ff-primary);
     font-weight: bold;
   }
-.red{
-background-image:url("images/belt.png")
-}
-   .different{
+
+  .red, .different{
     background-color: var(--clr-red-dark);
   }
 
@@ -256,6 +254,9 @@ display: none;
   padding: 2rem;
 }
 
+.classes{
+background-image:url("images/belt.png")
+}
 
 @media (min-width:45rem) {
   .contact-container{

@@ -16,34 +16,34 @@ gsap.to(masks[1], {
   }
 });
 
-const myText = new SplitType(".my-text");
-gsap.to(".char", {
-  y: 0,
-  stagger: 0.1,
-  delay: 0.1,
-  duration: 0.1,
+
+
+
+let scrollTL = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".main-title",
+    toggleActions:"play pause resume reverse",
+  }
 });
 
+scrollTL.from("h1", {opacity:0, scale:0, duration:1})
 
-ScrollTrigger.defaults({
-  toggleActions: "restart pause resume pause"
+
+let scrollTL2 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".animate",
+    toggleActions:"play pause resume reverse",
+  }
 });
 
-gsap.to(".heading h1", {
-  scrollTrigger: ".inner-wrapper", 
-  duration: 1, 
-  rotation: 360
+scrollTL2.from(".animate", { scale:0, stagger:{each:0.5} ,duratio:1});
+
+let scrollTL3 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".hours-animation",
+    toggleActions:"play pause resume reverse",
+  }
 });
 
-
-gsap.to(".left-container", {
-  scrollTrigger: {
-    trigger: ".left-container",
-    toggleActions: "restart pause reverse pause"
-  }, 
-  duration: 2, 
-  backgroundColor: "#000000", 
-  ease: "none"
-});
-
+scrollTL3.from(".hours-animation", { scale:0, y: "2rem",duratio:1});
 

@@ -104,7 +104,7 @@ Global Styles
     text-align: center;
     padding: 3rem 1rem;
    background-color: #000000;
-    background-image: url("belt.png");
+    background-image: url("images/belt.png");
     background-position:right;
     background-repeat: no-repeat;
     background-size:contain;
@@ -261,7 +261,7 @@ display: none;
 }
 
 .bg-ppic{
-  background-image: url(helmet.png);
+  background-image: url(images/helmet.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;

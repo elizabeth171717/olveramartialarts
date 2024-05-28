@@ -348,6 +348,7 @@ iframe{
 
  .image-container{
   flex:1;
+   height:70vh;
  }
 
  .text-container{

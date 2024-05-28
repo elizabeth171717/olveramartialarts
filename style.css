@@ -17,7 +17,7 @@ Variables
   /* primary/main color */
   --clr-primary-1:  hsl(205, 86%, 17%);
    /* red dark */
-   --clr-red-dark:#f10a0a;
+   --clr-red-dark:#e60707;
  
  
   /* darkest grey - used for headings */
@@ -57,8 +57,7 @@ Global Styles
   body {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    color: var(--clr-white);
-    background-color: var(--clr-black);
+    
     font-family: var(--ff-primary);
     font-weight: bold;
   }
@@ -69,7 +68,7 @@ Global Styles
 
   /***GSAP****/
   .animate{
-    text-shadow:2px 2px 2px grey;
+    
   scale:1;
 }
 .hours-animation{
@@ -96,32 +95,49 @@ Global Styles
   
   .section-title{
     text-align: center;
-    padding: 2rem 1rem;
-    
+   padding: 1rem;
+    color: var(--clr-grey-1);
   }
 
 
   .main-title{
     text-align: center;
-    padding: 2rem 1rem;
-    background-color: blue;
-    
+    padding: 3rem 1rem;
+   background-color: #000000;
+    background-image: url("belt.png");
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size:contain;
   }
 
 h1{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2rem;
+  font-weight: bold;
   opacity: 1;
   scale: 1;
 }
 
+section{
+  padding: 2rem 0;
+}
   @media (min-width:45rem) {
+
+    section{
+      padding-bottom: 5rem ;
+    }
     .section-title{
       text-align: center;
-      padding: 3rem;
-      
+     padding: 2rem;
+      font-size: 1.75rem;
     }
 
-    .main-title{
-     font-size: 2.5em;
+    h1{
+      
+      font-size: 3rem;
+      font-weight: bold;
+     
     }
   }
   
@@ -164,6 +180,18 @@ h1{
   }
 
   @media (min-width:45rem) {
+   
+
+.logo img{
+  width: 120px;
+}
+
+.top-nav {
+ 
+  justify-content: space-around;
+
+}
+
   .icons .fa-phone{
    display: block;
   }
@@ -209,31 +237,81 @@ display: none;
 
   
   /**CONTACT SECTION ***/
+
+  .contact{
+    background-color: var(--clr-black);
+  }
 .contact-box{
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 1rem;
+  padding: 1rem;
+  gap: .50rem;
+
+}
+
+.contact-box a, p{
+  font-size: 1.25rem;
+  
 }
 
 .contact-box h3{
-  font-size: 2rem;
+  font-size: 1.75rem;
+ font-family: var(--ff-secondary);
+ color: var(--clr-white);
 }
+
+.bg-ppic{
+  background-image: url(helmet.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  }
+
+  .bg-ppic a {
+    color: var(--clr-red-dark);
+   text-shadow: 2px 2px 2px 2px var(--clr-red-dark);
+    }
+  
+
+    
+    @media (min-width:45rem) {
+      .contact-container{
+        display: flex;
+        width: 100%;
+          }
+          .contact-box{
+            padding: 3rem;
+            border: 10px solid var(--clr-red-dark);
+            flex: 1;
+           
+          }
+
+          .bg-ppic{
+ background-size:inherit;
+ }
+  .bg-ppic a {
+  font-size: 1.25rem;
+    }
+
+      }
  /**CONTACT SECTION ***/
 
-
-.inner-container, .map-container{
+.inner-container, .map-container, .text-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem;
   gap: 1rem;
+  flex-direction: column;
 }
 
 .inner-container ul li {
  margin-bottom: .50rem;
- 
+
+ font-size: 1.25rem;
 }
+
+
 
 @media (min-width:45rem) {
   .hours ul li {
@@ -242,35 +320,17 @@ display: none;
    }
   }
 
-.text-container{
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center ;
-  justify-content: center;
- }
-
-.paragraph{
-  padding: 2rem;
-}
-
+/*********classes*********/
 .classes{
-background-image:url("images/belt.png");
-  background-size:cover;
-  background-repeat: no-repeat;
-  
+  background-color: var(--clr-red-dark);
 }
 
+
+iframe{
+  width: 90%;
+}
 @media (min-width:45rem) {
-  .contact-container{
-display: flex;
-width: 100%;
-  }
-  .contact-box{
-    flex: 1;
-    border: 10px solid red;
-  }
-  
+
  .split{
   display: flex;
  }
@@ -280,9 +340,10 @@ width: 100%;
 }
 
 .animated-list{
- 
-  justify-content: flex-start;
- 
+ width: 100%;
+ display: flex;
+ justify-content:space-around;
+ font-size: 1.75rem;
 }
 
  .image-container{
@@ -298,13 +359,13 @@ width: 100%;
   flex:1
  }
 
- .paragraph{
-  padding: 2rem 4rem;
-}
+
   }
 
 
 footer{
   padding: 2rem;
   text-align: center;
+  background-color: var(--clr-red-dark);
 }
+

@@ -296,48 +296,13 @@ display: none;
       }
  /**CONTACT SECTION ***/
 
-.inner-container, .map-container, .text-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  gap: 1rem;
-  flex-direction: column;
-}
-
-.inner-container ul li {
- margin-bottom: .50rem;
-
- font-size: 1.25rem;
-}
-
-
-
-@media (min-width:45rem) {
-  .hours ul li {
-    margin-bottom: 1rem;
-    
-   }
-  }
 
 /*********classes*********/
 .classes{
   background-color: var(--clr-red-dark);
 }
 
-
-iframe{
-  width: 90%;
-}
 @media (min-width:45rem) {
-
- .split{
-  display: flex;
- }
-
-.reverse{
-  flex-direction: row-reverse;
-}
 
 .animated-list{
  width: 100%;
@@ -345,20 +310,6 @@ iframe{
  justify-content:space-around;
  font-size: 1.75rem;
 }
-
- .image-container{
-  flex:1;
-  
- }
-
- .text-container{
-  flex:1;
-
- }
-
- .map-container{
-  flex:1
- }
 
 
   }

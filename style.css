@@ -229,12 +229,19 @@ display: none;
   }
 
   .img-mask img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+   
+  }
+ @media (min-width:45rem) {
+ .img-mask img{
     object-fit: cover;
     height: 100%;
     width: 100%;
    
   }
-
+}
 
   /**ONSCROLL IMAGE REVEAL ***/
 

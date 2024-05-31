@@ -385,6 +385,12 @@ iframe{
 
 
 /********************container************************/
+.bottom{
+margin:2rem 0;
+}
+
+
+
 .box-container{
   width: 100%;
   display: flex;

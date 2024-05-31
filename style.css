@@ -65,7 +65,9 @@ Global Styles
   .red, .different{
     background-color: var(--clr-red-dark);
   }
-
+.different{
+    margin-bottom:.50rem;
+  }
   /***GSAP****/
   .animate{
     

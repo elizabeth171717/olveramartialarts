@@ -391,7 +391,7 @@ iframe{
 
 .box-text{
   padding: 2rem;
-  background-color: #be0a0a;
+  background-color:  var(--clr-red-dark);
   color: #f1f1f1;
 }
 

@@ -229,7 +229,7 @@ display: none;
   }
 
   .img-mask img{
-
+ object-fit: contain;
     height: 100%;
     width: 100%;
    
@@ -308,9 +308,7 @@ display: none;
 
 
 /*********classes*********/
-.classes{
-  background-color: var(--clr-red-dark);
-}
+
 
 @media (min-width:45rem) {
 

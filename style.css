@@ -186,11 +186,11 @@ section{
    
 
 .logo img{
-  width: 150px;
+  width: 160px;
 }
 
 .top-nav {
- 
+    padding: .50rem 1rem;
   justify-content: space-around;
 
 }
@@ -204,7 +204,7 @@ display: none;
   }
 
   i{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
  /****************NAVIGATION*****************/

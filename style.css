@@ -17,7 +17,7 @@ Variables
   /* primary/main color */
   --clr-primary-1:  hsl(205, 86%, 17%);
    /* red dark */
-   --clr-red-dark:#e60707;
+   --clr-red-dark:#be0a0a;
  
  
   /* darkest grey - used for headings */
@@ -348,7 +348,7 @@ footer{
 
 
 .btn{
-  background-color: #be0a0a;
+  background-color:var(--clr-red-dark);
   padding: 1rem;
   color: #f1f1f1;
   font-weight: bold;

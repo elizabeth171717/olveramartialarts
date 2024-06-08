@@ -408,8 +408,17 @@ margin:2rem 1rem;
   padding: 2rem;
   background-color:  var(--clr-red-dark);
   color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.box-text a{
+ color: var(--clr-red-dark);
+  background-color: var(--clr-white);
+  padding: .50rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
 @media (min-width:45rem) {
 
 

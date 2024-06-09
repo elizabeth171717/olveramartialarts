@@ -286,7 +286,7 @@ display: none;
   
 
     
-    @media (min-width:40rem) {
+    @media (min-width:60rem) {
       .contact-container{
         display: flex;
         width: 100%;

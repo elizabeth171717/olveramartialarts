@@ -8,7 +8,7 @@ let scrollTL1 = gsap.timeline({
       toggleActions:"play pause resume reverse"
     }
   });
-  scrollTL1.from(".logo", {y:"50vh" , scale:3});
+  scrollTL1.from(".logo", {y:"50vh" , scale:4});
   
   
 

@@ -2,20 +2,15 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-let masks = gsap.utils.toArray(".img-mask");
-
-gsap.to(masks[1], {
-  height: "0%",
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".revealer",
-    start: "top top",
-    pin: true,
-    end: "+=100%",
-    scrub: 0.5
-  }
-});
-
+let scrollTL1 = gsap.timeline({
+    scrollTrigger: {
+      trigger:".content",
+      toggleActions:"play pause resume reverse"
+    }
+  });
+  scrollTL1.from(".logo", {y:"50vh" , scale:3});
+  
+  
 
 
 

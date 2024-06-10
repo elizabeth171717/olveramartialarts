@@ -201,16 +201,15 @@ background-color: black;
 @media (min-width:45em) {
 
     .nav{
-
-        padding: 1rem 4rem;
-    
+       padding: 1rem 4rem;
+  }
+    .content{
+    padding: 0 5rem;
     }
-    
+
 
     .content img{
-        width:100%;
-        height: 100%;
-        object-fit: contain;
+     object-fit: contain;
         }
 }
  /****************NAVIGATION*****************/

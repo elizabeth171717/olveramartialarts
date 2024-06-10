@@ -147,105 +147,75 @@ section{
   }
   
   /****************NAVIGATION*****************/
-
-  .nav{
+.nav{
     position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 999;
     width: 100%;
-    background-color: var(--clr-black);
-  }
-  .top-nav {
+  
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    align-items: center;
+    background-color: black;
+    z-index: 999;
+}
+
+.logo{
+    scale: 1;
+}
+
+.item-left{
+  color: red;
+  font-weight: bold;
+}
+
+.item-right{
+    border-radius: 5px ;
+    background-color: red;
+    padding: .50rem;
+    text-align: center;
+}
+
+
+
+
+.container{
+width:100%;
+height:100vh;
+background-color: black;
+}
+
+.content{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    position: relative;
+    padding: 0 4rem;
+    }
+
+    .content img{
+        width:100%;
+        height: 100%;
+       object-fit:cover;
+        }
+
+@media (min-width:45em) {
+
+    .nav{
+
+        padding: 1rem 4rem;
     
-   
-  }
+    }
+    
 
-  .icons{
-    display: flex;
-    gap: 1rem;
-
-  }
-
-.icons .fa-phone{
-    display: none;
-   }
-
-
-  .bottom-nav{
-    padding: 1rem;
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid var(--clr-white);
-  }
-
-  @media (min-width:45rem) {
-   
-
-.logo img{
-  width: 160px;
-}
-
-.top-nav {
-    padding: .50rem 1rem;
-  justify-content: space-around;
-
-}
-
-  .icons .fa-phone{
-   display: block;
-  }
-
-  .bottom-nav{
-display: none;
-  }
-
-  i{
-    font-size: 2.5rem;
-  }
+    .content img{
+        width:100%;
+        height: 100%;
+        object-fit: contain;
+        }
 }
  /****************NAVIGATION*****************/
 
-  /**ONSCROLL IMAGE REVEAL ***/
-.revealer {
-  width: 100%;
-    position: relative;
-    height: 100vh;
-   
-    background-color: black;
-  }
-  
-  .img-mask {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-  }
 
-  .img-mask img{
- object-fit: cover;
-    height: 100%;
-    width: 100%;
-   
-  }
- @media (min-width:45rem) {
- .img-mask img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-   
-  }
-}
-
-  /**ONSCROLL IMAGE REVEAL ***/
 
   
   /**CONTACT SECTION ***/

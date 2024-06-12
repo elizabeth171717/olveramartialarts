@@ -164,7 +164,7 @@ section{
 }
 
 .item-left{
-  color: red;
+  color: var(--clr-red-dark);
   font-weight: bold;
 }
 
@@ -205,7 +205,7 @@ background-color: var(--clr-black) ;
     height: 100vh;
     background-color: var(--clr-black);
     position: relative;
-    padding: 0 4rem;
+    padding: 0 .50rem;
     }
 
     .content img{
@@ -250,6 +250,11 @@ background-color: var(--clr-black) ;
      .item-left{
          display: block;
       }
+
+  .content{
+    
+    padding: 0 4rem;
+    }
 
     .content img{
         width:100%;

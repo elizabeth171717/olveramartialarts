@@ -147,15 +147,18 @@ section{
 .nav{
     position: fixed;
     width: 100%;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1rem;
-    background-color: black;
+    background-color: var(--clr-black);
     z-index: 999;
 }
 
+.top-nav{
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .logo{
     scale: 1;
 }
@@ -166,25 +169,43 @@ section{
 }
 
 .item-right{
-   
-    text-align: center;
+   display: none;
 }
 
+.item-left{
+    display: none;
+ }
+ 
+.bottom-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
 
-
+.bottom-nav a{
+   width: 80%;
+    display: flex;
+    background-color: var(--clr-white);
+   padding: .50rem;
+    justify-content: center;
+    color: var(--clr-red-dark);
+    font-weight: bold;
+    border-radius: 5px;
+}
 
 .hero-container{
-width:100%;
-height:100vh;
-background-color: black;
+width: 100%;
+height: 100vh;
+background-color: var(--clr-black) ;
 }
 
 .content{
-    width:100%;
-    height:100vh;
-    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clr-black);
     position: relative;
-    padding: 0 1rem;
+    padding: 0 4rem;
     }
 
     .content img{
@@ -196,15 +217,44 @@ background-color: black;
 @media (min-width:45em) {
 
     .nav{
-       padding: 1rem 4rem;
-  }
-    .content{
-    padding: 0 5rem;
+        padding: 2rem 4rem;
+         }
+
+    .top-nav{
+        
+        justify-content: space-between;
+    
+    }
+    
+    
+    .bottom-nav{
+        display: none;
     }
 
+    .item-right{
+        display: block;
+     }
+
+     .item-right a{
+  
+        display: flex;
+        background-color: var(--clr-white);
+       padding: 1rem;
+        justify-content: center;
+        color: red;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+     
+     .item-left{
+         display: block;
+      }
 
     .content img{
-     object-fit: contain;
+        width:100%;
+        height: 100%;
+        object-fit: contain;
         }
 }
  /****************NAVIGATION*****************/

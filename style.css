@@ -362,6 +362,7 @@ footer{
 
 
 .btn{
+  margin-top:1rem;
   background-color:var(--clr-red-dark);
   padding: 1rem;
   color: #f1f1f1;

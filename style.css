@@ -355,14 +355,9 @@ footer{
  /********************container************************/
 
 
-.text{
-  padding: 3rem 1rem;
-  gap: 2rem;
-}
-
 
 .btn{
-  margin-top:1rem;
+  margin-top: 2rem;
   background-color:var(--clr-red-dark);
   padding: 1rem;
   color: #f1f1f1;

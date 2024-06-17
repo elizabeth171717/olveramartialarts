@@ -308,8 +308,12 @@ h3{
 }
 
 @media (min-width: 50rem) {
-  
+  .contact{
+  width:100%
+
+}
     .box{
+       width:100%
       display: flex;
       gap: 1rem;
     justify-content: center;

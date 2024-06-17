@@ -178,16 +178,17 @@ section{
  
 .bottom-nav{
     width: 100%;
-    display: flex;
-    justify-content: center;
-     background-color: var(--clr-white);
+   background-color: var(--clr-white);
    padding: .50rem 0;
- 
-    color: var(--clr-red-dark);
+   color: var(--clr-red-dark);
+
+   text-align: center;
+     
+   font-weight: bold;
 }
 
 .bottom-nav p{
-  font-weight: bold;
+text-shadow: 1px 1px var(--clr-black);
     display: none;
 }
 

@@ -181,15 +181,13 @@ section{
     display: flex;
     justify-content: center;
      background-color: var(--clr-white);
-   padding: .50rem;
+   padding: .50rem 0;
  
     color: var(--clr-red-dark);
 }
 
 .bottom-nav p{
-  
-   
-    font-weight: bold;
+  font-weight: bold;
     display: none;
 }
 

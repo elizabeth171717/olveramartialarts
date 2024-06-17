@@ -271,60 +271,7 @@ background-color: var(--clr-black) ;
 
   
   /**CONTACT SECTION ***/
-.contact{
-    background-color: var(--clr-black);
-    padding: 1rem 0;
 
-}
-
-.box{
-    padding: 1rem;
-    width:90%;
-  margin:0 auto;
-}
-
-
-h3{
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    font-family: var(--ff-secondary);
- color:var(--clr-red-dark) ;
-}
-
-.box > div {
-    padding: 1rem ;
-    border: 1px solid var(--clr-red-dark);
-    box-shadow: 3px 3px 2px var(--clr-red-dark);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-}
-
-.box a{
-    font-size: 1.50rem;
-   
-    border-radius: 5px;
-    padding: .50rem;
-   
-}
-
-@media (min-width: 50rem) {
-  .contact{
-  width:100%;
-
-}
-    .box{
-       width:100%;
-      display: flex;
-      gap: 1rem;
-    justify-content: center;
-    }
-    .box > div {
-    width: 30%;
-    }
-
-
-    
-}
  /**CONTACT SECTION ***/
 
 

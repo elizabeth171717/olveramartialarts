@@ -286,13 +286,13 @@ h3{
     font-size: 1.75rem;
     margin-bottom: 1rem;
     font-family: var(--ff-secondary);
- color: var(--clr-white);
+ color:var(--clr-red-dark) ;
 }
 
 .box > div {
     padding: 1rem ;
     border: 1px solid var(--clr-red-dark);
-    box-shadow: 3px 3px 2px grey;
+    box-shadow: 3px 3px 2px var(--clr-red-dark);
     border-radius: 5px;
     margin-bottom: 1rem;
 }

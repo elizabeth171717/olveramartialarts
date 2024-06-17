@@ -270,63 +270,55 @@ background-color: var(--clr-black) ;
 
   
   /**CONTACT SECTION ***/
-
-  .contact{
+.contact{
     background-color: var(--clr-black);
-  }
-.contact-box{
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: .50rem;
+    padding: 1rem 0;
 
 }
 
-.contact-box a, p{
-  font-size: 1.25rem;
-  
+.box{
+    padding: 1rem;
+   
 }
 
-.contact-box h3{
-  font-size: 1.75rem;
- font-family: var(--ff-secondary);
+
+h3{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-family: var(--ff-secondary);
  color: var(--clr-white);
 }
 
-.bg-ppic{
-  background-image: url(images/helmet.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  }
+.box > div {
+    padding: 1rem ;
+    border: 1px solid var(--clr-red-dark);
+    box-shadow: 3px 3px 2px grey;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
 
-  .bg-ppic a {
-    color: var(--clr-red-dark);
-   text-shadow: 2px 2px 2px 2px var(--clr-red-dark);
-    }
+.box a{
+    font-size: 1.50rem;
+   
+    border-radius: 5px;
+    padding: .50rem;
+   
+}
+
+@media (min-width: 50rem) {
   
+    .box{
+      display: flex;
+      gap: 1rem;
+    justify-content: center;
+    }
+    .box > div {
+     flex: 1;
+    }
+
 
     
-    @media (min-width:60rem) {
-      .contact-container{
-        display: flex;
-        width: 100%;
-          }
-          .contact-box{
-            padding: 3rem;
-            border: 10px solid var(--clr-red-dark);
-            flex: 1;
-           
-          }
-
-          .bg-ppic{
- background-size:inherit;
- }
-  .bg-ppic a {
-  font-size: 1.25rem;
-    }
-
-      }
+}
  /**CONTACT SECTION ***/
 
 

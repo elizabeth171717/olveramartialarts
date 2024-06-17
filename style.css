@@ -183,7 +183,7 @@ section{
    
 }
 
-.bottom-nav a{
+.bottom-nav p{
    width: 100%;
     display: flex;
     background-color: var(--clr-white);
@@ -191,8 +191,12 @@ section{
     justify-content: center;
     color: var(--clr-red-dark);
     font-weight: bold;
-   
+    display: none;
 }
+
+p.displaySlide{
+      display: block;
+    }
 
 .hero-container{
 width: 100%;

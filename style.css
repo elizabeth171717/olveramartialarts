@@ -180,16 +180,15 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-   
+     background-color: var(--clr-white);
+   padding: .50rem;
+ 
+    color: var(--clr-red-dark);
 }
 
 .bottom-nav p{
-   width: 100%;
-    display: flex;
-    background-color: var(--clr-white);
-   padding: .50rem;
-    justify-content: center;
-    color: var(--clr-red-dark);
+  
+   
     font-weight: bold;
     display: none;
 }

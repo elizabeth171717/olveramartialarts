@@ -319,7 +319,7 @@ h3{
     justify-content: center;
     }
     .box > div {
-     flex: 1;
+    width: 30%;
     }
 
 

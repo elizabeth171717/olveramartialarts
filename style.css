@@ -119,6 +119,7 @@ h1{
   font-weight: bold;
   opacity: 1;
   scale: 1;
+  text-align:center;
 }
 
 section{
@@ -278,7 +279,8 @@ background-color: var(--clr-black) ;
 
 .box{
     padding: 1rem;
-   
+    width:90%;
+  margin:0 auto;
 }
 
 

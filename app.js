@@ -42,3 +42,49 @@ let scrollTL3 = gsap.timeline({
 
 scrollTL3.from(".hours-animation", { scale:0, y: "2rem",duratio:1});
 
+
+
+
+ const slides2 = document.querySelectorAll(".slide2");
+ let slideIndex2 = 0;
+ let intervalId2 = null;
+ 
+ 
+ //initializesSlider
+ 
+ document.addEventListener("DOMContentLoaded", initializeSlider);
+ 
+  function initializeSlider(){
+    if(slides2.length > 0){
+     slides2[slideIndex].classList.add("displaySlide");
+     intervalId2= setInterval(nextSlide,1000)
+    }
+  }
+ 
+  function showSlide(index){
+ 
+   if(index >= slides2.length){
+     slideIndex2 = 0;
+   } else if( index < 0){
+     slideIndex2 = slides2.length - 1;
+   }
+    
+ slides2.forEach(slide => {
+     slide.classList.remove("displaySlide");
+ });
+ 
+ slides2[slideIndex2].classList.add("displaySlide");
+  }
+ 
+  function prevSlide(){
+ slideIndex2--;
+ showSlide(slideIndex2);
+  }
+ 
+  function nextSlide(){
+ slideIndex2++;
+ showSlide(slideIndex2);
+  }
+ 
+ 
+ 

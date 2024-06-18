@@ -307,7 +307,7 @@ background-color: var(--clr-black) ;
     padding: .50rem;
     border-radius: 5px;
     font-size: 1rem;
-    background-color: white;
+  
 }
 
 @media (min-width: 50rem) {

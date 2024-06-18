@@ -94,22 +94,10 @@ Global Styles
     max-width: 100%;
   }
   
-  i{
-    font-size: 1.5rem;
-  }
-  
-  .section-title{
+.section-title{
     text-align: center;
    padding: 1rem;
     color: var(--clr-grey-1);
-  }
-
-
-  .main-title{
-    text-align: center;
-    padding: 3rem 1rem;
-   background-color: #000000;
-  
   }
 
 h1{

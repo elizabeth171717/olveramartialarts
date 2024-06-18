@@ -272,6 +272,70 @@ background-color: var(--clr-black) ;
   
   /**CONTACT SECTION ***/
 
+.contact{
+    background-color: black;
+    padding: 1rem 0;
+    color: white;
+   
+    text-align: center;
+}
+
+.contact-box{
+    padding: 1rem;
+   
+}
+
+
+
+.contact-box > div {
+    padding: 1rem ;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.contact-box > div > a{
+   font-size: 1.25rem;
+}
+
+
+.box-icon{
+    font-size: 3rem;
+}
+
+.call{
+    display: flex;
+    gap: .50rem;
+}
+
+
+.call a{
+    border: 1px solid white;
+    padding: .50rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+@media (min-width: 50rem) {
+  
+    .contact-box{
+      display: flex;
+      gap: 1rem;
+    justify-content: center;
+    }
+    .contact-box > div {
+     flex: 1;
+    }
+
+
+    
+}
  /**CONTACT SECTION ***/
 
 

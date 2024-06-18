@@ -16,7 +16,7 @@ let scrollTL1 = gsap.timeline({
 
 let scrollTL = gsap.timeline({
   scrollTrigger:{
-    trigger: ".main-title",
+    trigger: ".contact-box",
     toggleActions:"play pause resume reverse",
   }
 });

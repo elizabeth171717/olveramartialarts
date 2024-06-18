@@ -62,7 +62,7 @@ Global Styles
     font-weight: bold;
   }
 
-  .red, .different{
+  .red{
     background-color: var(--clr-red-dark);
   }
 
@@ -307,7 +307,7 @@ background-color: var(--clr-black) ;
     border: 1px solid white;
     padding: .50rem;
     border-radius: 5px;
-    font-size: 1rem;
+  
   
 }
 
@@ -321,9 +321,6 @@ background-color: var(--clr-black) ;
     .contact-box > div {
      flex: 1;
     }
-
-
-    
 }
  /**CONTACT SECTION ***/
 

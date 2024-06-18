@@ -294,6 +294,7 @@ background-color: var(--clr-black) ;
 
 .box-icon{
     font-size: 3rem;
+  color: var(--clr-red-dark);
 }
 
 .call{

@@ -500,7 +500,7 @@ height: 80%;
 
   .social-media i{
     color: var(--clr-white);
-    font-size: 2rem;
+    font-size: 1.75rem;
     }
 @media (min-width:45rem) {
  .social-media{

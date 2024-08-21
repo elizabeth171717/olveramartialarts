@@ -368,6 +368,10 @@ h1{
   gap: 1rem;
 }
 
+.animated-list{
+margin: 0 1rem;
+}
+
 @media (min-width:45rem) {
 
   .animated-list{

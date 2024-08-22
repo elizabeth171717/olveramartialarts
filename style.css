@@ -394,12 +394,12 @@ margin: 0 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1.50rem;
         margin: 1rem 0;
       }
       
       .card{
-        width: 80%;
+        width: 90%;
       }
       
       .card-text{

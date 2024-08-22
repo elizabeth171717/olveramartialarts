@@ -374,13 +374,15 @@ margin: 0 1rem;
 }
 
 @media (min-width:45rem) {
-
+ .classes{
+ gap: 2rem;
+  }
   .animated-list{
    width: 100%;
    display: flex;
    justify-content:space-around;
    font-size: 1.75rem;
-   gap: 1rem;
+   gap: 2rem;
   }
   
   

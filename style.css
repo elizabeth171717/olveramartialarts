@@ -224,7 +224,7 @@ background-color: var(--clr-black) ;
 
 h1{
   color: var(--clr-red-dark);
- text-shadow: 2px 2px 2px var(--clr-white);
+
   font-size: 2rem;
   font-weight: bold;
   opacity: 1;

@@ -221,7 +221,8 @@ gap: 1rem;
 
 
     .icon-container{
-    
+    justify-content: flex-end;
+        gap:.50rem;
     align-items: center;
     }
 

@@ -137,9 +137,8 @@ color:rgb(177, 8, 8);
  .instructor-card{
  box-shadow: 4px 4px 4px rgb(119, 117, 117);
   width: 90%;
-  background-color: blue;
   color: white;
- 
+  background-color: rgb(177, 8, 8);
  }
 
  .card-title{

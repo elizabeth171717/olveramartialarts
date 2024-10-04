@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=New+Amsterdam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Fustat:wght@200..800&family=New+Amsterdam&display=swap');
 
@@ -130,7 +131,7 @@ section{
     display: flex;
     flex-direction: column;
     color: var(--clr-white);
-    
+    padding-bottom: 3rem;
   
  }
 
@@ -295,7 +296,7 @@ gap: 1rem;
     .hero-container {
  
    flex-direction: row;
-    
+   padding-bottom: 0;
    }
    .hero-container div {
  width: 50%;
@@ -332,7 +333,7 @@ gap: 1rem;
     }
 
     .card-text{
-      border: 1px solid black;
+      border: 1px solid var(--clr-black);
       background-color:rgb(240, 222, 222);
      position: absolute;
      bottom: 1rem;
@@ -345,7 +346,7 @@ gap: 1rem;
 width: 100%;
 display: flex;
 justify-content: center;
-background-color: black;
+background-color: var(--clr-black);
 height: 90vh;
     }
 

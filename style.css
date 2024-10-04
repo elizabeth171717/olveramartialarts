@@ -1,7 +1,45 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=New+Amsterdam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Fustat:wght@200..800&family=New+Amsterdam&display=swap');
+
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  
+   /* red dark */
+   --clr-red-dark: rgb(177, 8, 8);
+ 
+ 
+  /* darkest grey  */
+  --clr-grey:#3f3f3d;
+ 
+  /* grey used for rating stars */
+  --clr-yellow: rgb(241, 217, 1);
+  /* white */
+  --clr-white: #fff;
+ 
+  /* black */
+  --clr-black: #000000;
+  --ff-primary: "Fustat", sans-serif;
+  --ff-secondary: "New Amsterdam", sans-serif;
+ 
+ }
+
+
+
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+
+
 
 *{
     margin:0;
@@ -12,7 +50,7 @@
 /*MOBILE FIRST*/
 
 body{
-  font-family: "Fustat", sans-serif;
+  font-family:var(--ff-primary);
 }
 
 a{
@@ -20,17 +58,17 @@ a{
 }
 
 h1, h2{
-  font-family: "New Amsterdam", sans-serif;
+  font-family: var(--ff-secondary);
 }
 
 
 .btn{
   padding: .50rem 1rem;
-  background-color: rgb(177, 8, 8);
-  color: white;
+  background-color:var(--clr-red-dark);
+  color: var(--clr-white);
   border-radius: .25rem;
   border:none;
- font-size:20px;
+font-size: 20px;
 }
 
 
@@ -67,7 +105,7 @@ section{
       justify-content: center;
       align-items: center;
       padding: .50rem;
-      background-color: black;
+      background-color:var(--clr-black);
     }
 
     .icon-container{
@@ -75,12 +113,12 @@ section{
       display: flex;
       padding: .50rem;
       justify-content: space-around;
-      background-color: black;
+      background-color: var(--clr-black);
     }
 
 
     .icon-container a{
-     color:white;
+     color:var(--clr-white);
      font-size: 2rem;
     }
 /*navbar ends*/
@@ -88,10 +126,10 @@ section{
 /*hero section*/
 .hero-container{
 
-    background-color: black;
+    background-color: var(--clr-black);
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--clr-white);
     
   
  }
@@ -120,7 +158,7 @@ text-align: center;
  }
 
  .fa-star{
-  color: rgb(245, 210, 13);
+  color: var(--clr-yellow);
 }
 /*CLASSES SECTION*/
 
@@ -133,10 +171,10 @@ text-align: center;
   justify-content: center;
 }
  .instructor-card{
- box-shadow: 4px 4px 4px rgb(119, 117, 117);
+ box-shadow: 4px 4px 4px var(--clr-grey);
   width: 90%;
-  background-color:  rgb(177, 8, 8);
-  color: white;
+  background-color: var(--clr-red-dark);
+  color: var(--clr-white);
  
  }
 
@@ -308,10 +346,11 @@ width: 100%;
 display: flex;
 justify-content: center;
 background-color: black;
+height: 90vh;
     }
 
     .image-banner img{
-    width: 30%;
+      width: 50%;
           }
 
 
@@ -362,6 +401,11 @@ height:400px;
 
    }
 
+
+
+
+
+   
 
 
 

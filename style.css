@@ -384,12 +384,12 @@ height: 90vh;
                 }
 
 
-  
-/*CHOOSE US*/
-     .choose-us{
-   
+  /*CHOOSE US- MY-GYM*/
+     .choose-us, .my-gym{
+   padding: 2rem;
      gap: 2rem;
      }
+
  /*GALLERY*/
  .gallery{
   width: 100%;

@@ -221,10 +221,7 @@ text-align: center;
 
   /*MY-GYMSECTION*/
    .my-gym{
-background-image: url(emojis.png);
-background-repeat: no-repeat;
-background-position: right;
-background-size:auto;
+
 padding: 0 .50rem;
 display: flex;
 flex-direction: column;
@@ -373,7 +370,16 @@ height: 90vh;
                   padding: 1rem 0;
                 }
 
-  
+
+  /*MY-GYMSECTION*/
+   .my-gym{
+background-image: url(emojis.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size:auto;
+
+   }
+     
 /*CHOOSE US- MY-GYM*/
      .choose-us, .my-gym{
    padding: 2rem;

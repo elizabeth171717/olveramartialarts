@@ -234,7 +234,10 @@ flex-direction: column;
 gap: 1rem;
    }
 
-
+ .hours-container, .contact-container, .map-text-container{
+    padding-left: 1rem;
+   }
+  
    /*FOOTER*/
    footer{
     padding: 2rem .50rem;

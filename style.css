@@ -19,7 +19,7 @@ Variables
   --clr-grey:#3f3f3d;
  
   /* grey used for rating stars */
-  --clr-yellow: rgb(241, 217, 1);
+ --clr-yellow: rgb(241, 199, 58);
   /* white */
   --clr-white: #fff;
  
@@ -332,38 +332,40 @@ gap: 1rem;
      
       gap: 6rem;
      }
+
     .card{
       width: 100%;
-      height: 90vh;
+      font-weight: bold;
       position: relative;
+      display: inline-block; /* Make sure the container sizes to the image */
     }
+
+
+    .card img {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Keep the aspect ratio */
+  }
+  
+
+
+  .card-text{
+    position: absolute;
+    bottom: 20px; /* Positioning from the bottom */
+    right:20px; /* Positioning from the left */
+    background-color: rgba(211, 188, 188, 0.7); /* White background with 70% transparency */
+    color: black; /* Text color */
+    padding: 10px; /* Add some space around the text */
+    border-radius: 5px; /* Optional: Rounded corners */
+  
+  }
+
+
 
     .fa-star{
      
       font-size: 2em;
           }
 
-
-    .card-img{
-      width: 100%;
-      height: 100%;
-    }
-
-    .card-img img{
-      width: 100%;
-      height: 100%;
-  object-fit:fill;
-  
-    }
-
-    .card-text{
-      border: 1px solid var(--clr-black);
-      background-color:rgb(240, 222, 222);
-     position: absolute;
-     bottom: 1rem;
-     right: 1rem;
-    
-    }
 
      /*FACEBOOK VIDEO SECTION*/
 .fb-video iframe{

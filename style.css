@@ -170,16 +170,20 @@ text-align: center;
 
 
 /*FACEBOOK VIDEO SECTION*/
+
+/*FACEBOOK VIDEO SECTION*/
 .fb-video {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+ padding: 0 1rem;
 }
 
-
+.fb-video iframe{
+  width: 100%;
+ } 
 /*INSTRUCTOR SECTION*/
 .instructor{
   width: 100%;

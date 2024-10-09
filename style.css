@@ -166,8 +166,18 @@ text-align: center;
  .fa-star{
   color: var(--clr-yellow);
 }
-/*CLASSES SECTION*/
 
+
+
+/*FACEBOOK VIDEO SECTION*/
+.fb-video {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
 
 
 /*INSTRUCTOR SECTION*/
@@ -350,6 +360,12 @@ gap: 1rem;
      right: 1rem;
     
     }
+
+     /*FACEBOOK VIDEO SECTION*/
+.fb-video iframe{
+ width: 500px;
+ height: 500px;
+} 
 
 /*IMAGE BANNER*/
     .image-banner{

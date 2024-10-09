@@ -387,9 +387,7 @@ height: 90vh;
   width: 100%;
   justify-content:flex-end;
   padding: 0 3rem;
-  background-image: url(emojis.png);
-  background-repeat: no-repeat;
-  background-position:left;
+
 }
  .instructor-card{
  width: 350px;

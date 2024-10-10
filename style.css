@@ -140,6 +140,13 @@ section{
   
  }
 
+/*GSAP*/
+ .animated-pic{
+  scale:.25;
+  opacity: 0.5;
+ }
+
+
  .text-section, .card-text{
 display: flex;
 flex-direction: column;
@@ -154,6 +161,7 @@ text-align: center;
 .text-banner{
  padding-top: 3rem;
 text-align: center;
+  opacity: 0;/*GSAP*/
  }
 
 /*CLASSES SECTION*/
@@ -168,9 +176,6 @@ text-align: center;
 }
 
 
-
-/*FACEBOOK VIDEO SECTION*/
-
 /*FACEBOOK VIDEO SECTION*/
 .fb-video {
   display: flex;
@@ -184,6 +189,18 @@ text-align: center;
 .fb-video iframe{
   width: 100%;
  } 
+
+ /*GSAP*/
+ .image-banner{
+  scale:0;
+  
+ }
+ .image-banner-second{
+scale:0;
+ }
+
+
+
 /*INSTRUCTOR SECTION*/
 .instructor{
   width: 100%;

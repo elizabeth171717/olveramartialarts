@@ -1,3 +1,44 @@
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".animated-pic",{
+  opacity: 1,
+  scale:1,
+ duration:1,
+ 
+ scrollTrigger:{
+  trigger:".animated-pic"
+
+ }
+});
+
+
+gsap.to(".text-banner",{
+  opacity: 1,
+  duration:1,
+ scrollTrigger:{
+  trigger:".text-banner"
+ }
+});
+
+gsap.to(".image-banner",{
+
+  scale:1,
+ duration:1,
+ scrollTrigger:{
+  trigger:".image-banner"
+ }
+})
+
+
+gsap.to(".image-banner-second",{
+
+  scale:1,
+ duration:1,
+ scrollTrigger:{
+  trigger:".image-banner-second"
+ }
+})
+
+
 
 const slides = document.querySelectorAll(".slide");
 let slideIndex2 = 0;

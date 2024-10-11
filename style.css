@@ -146,6 +146,15 @@ section{
   opacity: 0.5;
  }
 
+.second-animated-pic {
+  scale: 0;
+
+}
+
+.third-animated-pic {
+  scale: 0;
+ 
+}
 
  .text-section, .card-text{
 display: flex;
@@ -190,15 +199,6 @@ text-align: center;
   width: 100%;
  } 
 
- /*GSAP*/
- .image-banner{
-  scale:0;
-  
- }
- .image-banner-second{
-scale:0;
- }
-
 
 
 /*INSTRUCTOR SECTION*/
@@ -207,6 +207,10 @@ scale:0;
   display: flex;
   justify-content: center;
 }
+.instructor-container{
+display: none;
+}
+
  .instructor-card{
  box-shadow: 4px 4px 4px var(--clr-grey);
   width: 90%;
@@ -406,11 +410,50 @@ height: 90vh;
   padding: 0 3rem;
 
 }
- .instructor-card{
- width: 350px;
+
+      .instructor-card {
+   display: none;
+}
+
+.instructor-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.instructor-desc{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.instructor-desc h1{
+  font-size: 4em;
+  letter-spacing: .25rem;
+}
+
+.instructor-desc p{
+  font-size: 4em;
+}
+
+
+
+.instructor-img{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+align-items: center;
+padding: 3rem 5rem  3rem 0;
+}
+
+.instructor-img img{
+  width: 100%;
+  height:100%;
   
- 
- }
+}
 
 /*MY-GYMSECTION*/
    .my-gym{

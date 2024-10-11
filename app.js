@@ -1,4 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".text-banner",{
+  opacity: 1,
+  duration:1,
+  scale:1,
+ scrollTrigger:{
+  trigger:".text-banner"
+ }
+});
+
+
 gsap.to(".animated-pic",{
   opacity: 1,
   scale:1,
@@ -11,32 +22,25 @@ gsap.to(".animated-pic",{
 });
 
 
-gsap.to(".text-banner",{
-  opacity: 1,
-  duration:1,
+
+gsap.to(".second-animated-pic",{
+
+  scale:1,
+ duration:1,
  scrollTrigger:{
-  trigger:".text-banner"
+  trigger:".second-animated-pic"
+ }
+})
+
+
+gsap.to(".third-animated-pic",{
+
+  scale:1,
+ duration:1,
+ scrollTrigger:{
+  trigger:".third-animated-pic"
  }
 });
-
-gsap.to(".image-banner",{
-
-  scale:1,
- duration:1,
- scrollTrigger:{
-  trigger:".image-banner"
- }
-})
-
-
-gsap.to(".image-banner-second",{
-
-  scale:1,
- duration:1,
- scrollTrigger:{
-  trigger:".image-banner-second"
- }
-})
 
 
 

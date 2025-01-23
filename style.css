@@ -205,7 +205,7 @@ display: flex;
 .classes{
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   align-items: center;
   margin: 5rem 0;
 }

@@ -207,7 +207,7 @@ display: flex;
 .classes{
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 6rem;
   align-items: center;
   margin: 5rem 0;
 }
@@ -239,7 +239,7 @@ display: flex;
 @media (min-width:45rem) {
   .classes{
     margin: 7rem 0;
-    gap: 5rem;
+    gap: 10rem;
     
   }
   

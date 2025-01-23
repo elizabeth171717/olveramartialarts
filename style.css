@@ -82,6 +82,8 @@ Global Styles
    color:var(--clr-white);
    display: flex;
    gap: .50rem;
+    font-weight: bold;
+   font-size: 1.25rem;
   }
   .btn:hover{
    

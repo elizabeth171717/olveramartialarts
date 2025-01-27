@@ -1,3 +1,17 @@
+gsap.registerPlugin(ScrollTrigger);
+
+//gsap
+gsap.from(".fa-star",
+   {
+    opacity: 0,
+     scale: .20,
+      stagger:{each: 0.5},
+      ScrollTrigger:".fa-star",
+    });
+
+
+
+//text slide
 const slides = document.querySelectorAll(".slide");
 let slideIndex2 = 0;
 let intervalId2 = null;

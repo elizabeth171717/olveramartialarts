@@ -99,6 +99,38 @@ h3{
    background-color: var(--clr-red-dark);
   }
 
+/**MODAL**/
+
+  #modal{
+    background-color: var(--clr-red-dark);
+    display: none;
+    width: 90%;
+ margin:1rem;
+    padding: 1rem;
+  position: absolute;
+  top:20%;
+ 
+
+
+  }
+
+  #close-modal{
+ cursor: pointer;
+ margin: 0 auto;
+  }
+
+
+
+  @media (min-width:45rem) {
+    #modal{
+      width: 40rem;
+     left: 15%;
+    }
+  }
+
+   /**MODAL**/
+
+
   nav{
     position: sticky;
     top: 0;
@@ -122,19 +154,22 @@ h3{
   }
 
 
+
 .icons{
   display: flex;
   padding: .50rem;
   justify-content: space-around;
   background-color: var(--clr-white);
+  border-bottom: 3px solid var(--clr-red-dark);
 }
 
-.icon a{
+.icons i{
   color: var(--clr-red-dark);
   font-size: 1.5rem;
 }
 
-.icon a:hover{
+.icons i:hover{
+  cursor: pointer;
   color: var(--clr-black);
 }
 
@@ -148,7 +183,6 @@ h3{
   
  
 }
-
 /*Hero Section*/
 
 

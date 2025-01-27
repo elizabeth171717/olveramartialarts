@@ -38,3 +38,19 @@ showSlide(slideIndex2);
 slideIndex2++;
 showSlide(slideIndex2);
  }
+
+
+
+const openModal = document.getElementById("open-modal");
+ const modal = document.getElementById("modal");
+ const closeModal = document.getElementById("close-modal");
+
+
+ openModal.addEventListener("click", event =>{
+  modal.style.display= "block";
+ });
+
+ 
+ closeModal.addEventListener("click", event =>{
+  modal.style.display= "none";
+ });

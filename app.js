@@ -1,3 +1,15 @@
+
+//gsap
+gsap.from(".TITLE",
+   {
+    opacity:0,
+      y: "6rem",
+      duration:1,
+      
+    });
+
+   
+
 gsap.registerPlugin(ScrollTrigger);
 
 //gsap

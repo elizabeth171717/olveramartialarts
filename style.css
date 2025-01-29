@@ -381,6 +381,16 @@ color: var(--clr-white);
 
 }
 
+/*gallery*/
+@media (min-width:45rem) {
+  .split{
+    display: flex;
+  
+  }
+
+ 
+}
+
 /*gym-info*/
 .gym-info{
   padding: 1rem;

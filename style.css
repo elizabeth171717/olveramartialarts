@@ -255,16 +255,23 @@ display: flex;
   border: 1px solid var(--clr-grey);
   width: 90%;
  box-shadow: 3px 3px 2px var(--clr-grey);
+ min-height: 70vh;
 }
 
 .class-img {
- 
+  height: 40vh;
   background-color: var(--clr-red-dark);
+}
+
+.class-img img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
 }
 
 .class-description{
 
-  padding: 2rem 1rem ;
+  padding:1rem ;
   display: flex;
   flex-direction: column;
   gap: .50rem;

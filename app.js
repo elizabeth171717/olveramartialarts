@@ -1,6 +1,6 @@
 
 //gsap
-gsap.from(".TITLE",
+gsap.from(".title",
    {
     opacity:0,
       y: "6rem",

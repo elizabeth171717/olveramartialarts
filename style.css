@@ -362,6 +362,29 @@ color: var(--clr-white);
 }
 
 
+/*gallery*/
+
+@media (min-width:45rem) {
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .gallery-pic{
+    width: 100%;
+    height: 500px;
+  }
+
+  .gallery-pic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
 /*gym-info*/
 .gym-info{
   padding: 1rem;

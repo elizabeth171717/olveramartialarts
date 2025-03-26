@@ -70,10 +70,16 @@ h2{
 }
 
 h3{
+  color: var(--clr-white);
   font-size: 1.75rem;
 }
 
-
+.banner {
+padding: 1rem;
+text-align: center;
+background-color:var(--clr-black);
+margin-top: 5rem;
+}
  
   img {
     width: 100%;

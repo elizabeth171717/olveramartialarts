@@ -33,7 +33,7 @@ gsap.utils.toArray(".class").forEach((card, index) => {
       trigger: card,
       start: "top 80%",
       toggleActions: "play reverse play reverse",
-       markers: true,
+       
     },
   });
 });

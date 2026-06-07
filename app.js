@@ -21,23 +21,21 @@ gsap.from(".fa-star",
       scrollTrigger:".fa-star",
     });
 
+    const offset = window.innerWidth < 768 ? 30 : 150;
+
 gsap.utils.toArray(".class").forEach((card, index) => {
   gsap.from(card, {
-    x: index % 2 === 0 ? -150 : 150, // alternate directions
+    x: index % 2 === 0 ? -offset : offset,
     opacity: 0,
     duration: 1,
     ease: "power3.out",
-
-
     scrollTrigger: {
       trigger: card,
       start: "top 80%",
       toggleActions: "play reverse play reverse",
-       
     },
   });
 });
-
 
 gsap.from(".instructor-card img", {
   rotationY: 180,
@@ -51,6 +49,7 @@ gsap.from(".instructor-card img", {
   scrollTrigger: {
     trigger: ".instructor",
     start: "top 75%",
+      toggleActions: "play reverse play reverse",
   }
 });
 

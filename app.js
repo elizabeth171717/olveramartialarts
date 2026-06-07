@@ -18,11 +18,93 @@ gsap.from(".fa-star",
     opacity: 0,
      scale: .20,
       stagger:{each: 0.5},
-      ScrollTrigger:".fa-star",
+      scrollTrigger:".fa-star",
     });
 
+gsap.utils.toArray(".class").forEach((card, index) => {
+  gsap.from(card, {
+    x: index % 2 === 0 ? -150 : 150, // alternate directions
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
 
 
+    scrollTrigger: {
+      trigger: card,
+      start: "top 80%",
+      toggleActions: "play reverse play reverse",
+       markers: true,
+    },
+  });
+});
+
+
+gsap.from(".instructor-card img", {
+  rotationY: 180,
+  rotationX: 45,
+  scale: 0.5,
+  opacity: 0,
+  duration: 1.8,
+  ease: "back.out(2)",
+
+
+  scrollTrigger: {
+    trigger: ".instructor",
+    start: "top 75%",
+  }
+});
+
+
+gsap.utils.toArray(".gallery-pic img").forEach((img) => {
+  gsap.from(img, {
+    scale: 1.3,
+    filter: "blur(10px)",
+    duration: 1.5,
+    ease: "power3.out",
+
+
+    scrollTrigger: {
+      trigger: img,
+      start: "top 85%",
+      toggleActions: "play reverse play reverse",
+    }
+  });
+});
+
+
+gsap.from(".gym-info", {
+  clipPath: "inset(100% 0% 0% 0%)",
+  duration: 1.8,
+  ease: "power4.out",
+
+
+  scrollTrigger: {
+    trigger: ".gym-info",
+    start: "top 75%",
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+
+gsap.from(".gym-info > div", {
+  opacity: 0,
+  y: 200,
+  rotationX: -90,
+  scale: 0.5,
+  transformOrigin: "center top",
+  stagger: 0.2,
+  duration: 1.5,
+  ease: "back.out(2.5)",
+
+
+  scrollTrigger: {
+    trigger: ".gym-info",
+    start: "top 70%",
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+ 
 //text slide
 const slides = document.querySelectorAll(".slide");
 let slideIndex2 = 0;

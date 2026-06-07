@@ -373,6 +373,7 @@ color: var(--clr-white);
 @media (min-width:45rem) {
 
   .gallery {
+    
     display: flex;
     flex-direction: column;
     gap: 4rem;
